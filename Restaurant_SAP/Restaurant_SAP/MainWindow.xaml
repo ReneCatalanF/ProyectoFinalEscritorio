@@ -1,0 +1,24 @@
+﻿<Window x:Class="Restaurant_SAP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Restaurant_SAP"
+        xmlns:views="clr-namespace:Restaurant_SAP.Views"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <TabControl>
+        <TabItem Header="Mapa de Mesas">
+            <views:MapaMesasView/>
+        </TabItem>
+        <TabItem Header="Mesas y Pedidos">
+        </TabItem>
+        <TabItem Header="Historial Económico">
+        </TabItem>
+        <TabItem Header="CRUD Mesas">
+            <views:MesasView/>
+        </TabItem>
+        <TabItem Header="CRUD Menú">
+        </TabItem>
+    </TabControl>
+</Window>
