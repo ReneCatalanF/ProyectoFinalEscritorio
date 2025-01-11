@@ -8,6 +8,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace Restaurant_SAP.ViewModels
@@ -20,6 +21,8 @@ namespace Restaurant_SAP.ViewModels
         private Mesa _selectedMesa;
         private Mesa _nuevaMesa;
         private string _mensajeError;
+
+        public bool IsEditing { get; set; }
 
         public ObservableCollection<Mesa> Mesas { get; set; }
 
@@ -36,6 +39,7 @@ namespace Restaurant_SAP.ViewModels
             {
                 _selectedMesa = value;
                 OnPropertyChanged(nameof(SelectedMesa));
+                IsEditing = value != null;
                 // Notificar explicitamente que CanExecute puede haber cambiado
                 ((RelayCommand)EliminarMesaCommand).RaiseCanExecuteChanged();
                 ((RelayCommand)GuardarCambiosCommand).RaiseCanExecuteChanged();
@@ -163,13 +167,14 @@ namespace Restaurant_SAP.ViewModels
 
         private void CancelarEdicion()
         {
+            IsEditing = false;
+            NuevaMesa = new Mesa();
             //Recargar las mesas desde la base de datos para cancelar los cambios
             _context.ChangeTracker.Clear();
             CargarMesas();
             SelectedMesa = null;
         }
-
-
+        
 
         protected virtual void OnMesasChanged()
         {

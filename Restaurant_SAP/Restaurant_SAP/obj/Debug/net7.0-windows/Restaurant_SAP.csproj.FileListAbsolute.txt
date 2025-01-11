@@ -77,3 +77,4 @@ C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoF
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Views\MapaMesasView.g.cs
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Views\MapaMesasView.baml
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Restaurant_SAP.sourcelink.json
