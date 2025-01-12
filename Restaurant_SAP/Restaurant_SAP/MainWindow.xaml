@@ -5,18 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Restaurant_SAP"
         xmlns:views="clr-namespace:Restaurant_SAP.Views"
+        xmlns:viewsmodel="clr-namespace:Restaurant_SAP.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <TabControl>
+
+    <Window.Resources>
+        <viewsmodel:ViewModelLocator x:Key="Locator"/>
+    </Window.Resources>
+    <TabControl DataContext="{StaticResource Locator}">
         <TabItem Header="Mapa de Mesas">
-            <views:MapaMesasView/>
+            <views:MapaMesasView DataContext="{Binding MapaMesasViewModel}"/>
         </TabItem>
         <TabItem Header="Mesas y Pedidos">
         </TabItem>
         <TabItem Header="Historial Económico">
         </TabItem>
         <TabItem Header="CRUD Mesas">
-            <views:MesasView/>
+            <views:MesasView DataContext="{Binding MesasViewModel}"/>
         </TabItem>
         <TabItem Header="CRUD Menú">
         </TabItem>

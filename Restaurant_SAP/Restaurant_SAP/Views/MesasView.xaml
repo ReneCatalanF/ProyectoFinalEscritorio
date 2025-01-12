@@ -6,53 +6,82 @@
              xmlns:local="clr-namespace:Restaurant_SAP.Views"
              xmlns:viewmodels="clr-namespace:Restaurant_SAP.ViewModels"
              xmlns:converters="clr-namespace:Restaurant_SAP.Converters"
+             xmlns:models="clr-namespace:Restaurant_SAP.Models"
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
-    <UserControl.Resources>
-        <converters:InverseBoolConverter x:Key="InverseBoolConverter" />
-    </UserControl.Resources>
-    <UserControl.DataContext>
-        <viewmodels:MesasViewModel></viewmodels:MesasViewModel>
-    </UserControl.DataContext>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Visibility="{Binding IsEditing, Converter={StaticResource InverseBoolConverter}}">
-            <TextBlock Text="Agregar Mesa" FontWeight="Bold" />
-            <TextBox Text="{Binding NuevaMesa.Numero, UpdateSourceTrigger=PropertyChanged}" />
-            <TextBox Text="{Binding NuevaMesa.Descripcion, UpdateSourceTrigger=PropertyChanged}" />
-            <Button Content="Agregar" Command="{Binding AgregarMesaCommand}" IsEnabled="{Binding Not IsEditing}" />
-            <TextBlock Text="{Binding MensajeError}" Foreground="Red"/>
-        </StackPanel>
-
-        <ListBox Grid.Row="1" ItemsSource="{Binding Mesas}" SelectedItem="{Binding SelectedMesa}">
+        <ListBox Grid.Row="0" ItemsSource="{Binding Mesas}" SelectedItem="{Binding SelectedMesa}" Margin="10">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding Numero}" Margin="0,0,5,0" />
-                        <TextBlock Text="{Binding Descripcion}" />
+                        <TextBlock Text="{Binding Numero}" FontWeight="Bold" Margin="0,0,5,0"/>
+                        <TextBlock Text="{Binding Descripcion}" Margin="0,0,5,0"/>
+                        <TextBlock Text="{Binding Estado}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <GroupBox Grid.Row="2" Header="Editando Mesa" HorizontalAlignment="Right" Visibility="{Binding IsEditing}">
-            <StackPanel>
-                <Button Visibility="Hidden" IsTabStop="False" Name="FocusStealer" />
-                <TextBox Text="{Binding SelectedMesa.Numero, UpdateSourceTrigger=LostFocus}" />
-                <TextBox Text="{Binding SelectedMesa.Descripcion, UpdateSourceTrigger=LostFocus}" />
-                <Button Content="Guardar Edicion" Command="{Binding GuardarCambiosCommand}" />
-                <Button Content="Cancelar Edicion" Command="{Binding CancelarEdicionCommand}" />
-            </StackPanel>
+        <GroupBox Grid.Row="1" Header="Edición de Mesa" Margin="10" DataContext="{Binding MesaEnEdicion}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Número:" Margin="5"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Numero, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Descripción:" Margin="5"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Descripcion, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Estado:" Margin="5"/>
+                <ComboBox Grid.Row="2" Grid.Column="1"
+                  ItemsSource="{Binding DataContext.EstadosMesa, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                  SelectedItem="{Binding Estado, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+
+                <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="Guardar" Command="{Binding DataContext.GuardarCambiosCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5" 
+                            
+                            />
+                    <Button Content="Cancelar" Command="{Binding DataContext.CancelarEdicionCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5"/>
+                </StackPanel>
+            </Grid>
         </GroupBox>
 
-        <StackPanel Grid.Row="3" VerticalAlignment="Bottom" Visibility="{Binding IsEditing, Converter={StaticResource InverseBoolConverter}}">
-            <Button Content="Eliminar" Command="{Binding EliminarMesaCommand}" Margin="5"/>
-        </StackPanel>
+        <GroupBox Grid.Row="2" Header="Nueva Mesa" Margin="10" DataContext="{Binding NuevaMesa}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Número:" Margin="5"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Numero, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Descripción:" Margin="5"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Descripcion, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+
+                <Button Grid.Row="2" Grid.ColumnSpan="2" Content="Agregar Mesa" 
+                        Command="{Binding DataContext.AgregarMesaCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5"/>
+            </Grid>
+        </GroupBox>
     </Grid>
 </UserControl>

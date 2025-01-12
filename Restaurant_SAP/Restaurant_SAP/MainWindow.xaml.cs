@@ -1,4 +1,6 @@
-﻿using Restaurant_SAP.ViewModels;
+﻿using Restaurant_SAP.DB;
+using Restaurant_SAP.ViewModels;
+using Restaurant_SAP.Views;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -20,7 +22,15 @@ namespace Restaurant_SAP
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new MesasViewModel();
+            this.Closing += MainWindow_Closing;
+        }
+
+        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (this.Resources["Locator"] is ViewModelLocator locator)
+            {
+                locator.Cleanup();
+            }
         }
     }
 }
