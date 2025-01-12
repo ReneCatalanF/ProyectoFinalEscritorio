@@ -42,12 +42,12 @@ namespace Restaurant_SAP.Commands
     {
         private readonly Action<object> _execute;
         private readonly Predicate<object> _canExecute;
-        private EventHandler _canExecuteChanged; // Campo privado para el evento
+        private EventHandler _canExecuteChanged;
 
         public event EventHandler CanExecuteChanged
         {
-            add { _canExecuteChanged += value; } // Usar el campo privado
-            remove { _canExecuteChanged -= value; } // Usar el campo privado
+            add { _canExecuteChanged += value; }
+            remove { _canExecuteChanged -= value; }
         }
 
         public RelayCommand(Action<object> execute) : this(execute, null) { }
@@ -70,8 +70,7 @@ namespace Restaurant_SAP.Commands
 
         public void RaiseCanExecuteChanged()
         {
-            _canExecuteChanged?.Invoke(this, EventArgs.Empty); // Invocar el evento correctamente
-            //CommandManager.InvalidateRequerySuggested(); Esta linea no es necesaria con la implementacion del evento
+            _canExecuteChanged?.Invoke(this, EventArgs.Empty);
         }
     }
 }

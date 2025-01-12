@@ -24,6 +24,7 @@
             <views:MesasView DataContext="{Binding MesasViewModel}"/>
         </TabItem>
         <TabItem Header="CRUD Menú">
+            <views:MenusView DataContext="{Binding MenusViewModel}"/>
         </TabItem>
     </TabControl>
 </Window>

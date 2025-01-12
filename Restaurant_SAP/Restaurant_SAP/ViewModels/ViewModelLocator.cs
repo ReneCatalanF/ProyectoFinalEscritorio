@@ -15,15 +15,19 @@ namespace Restaurant_SAP.ViewModels
         {
             _context = new RestauranteContext();
             MesasViewModel = new MesasViewModel(_context);
+            MenusViewModel = new MenusViewModel(_context);
             MapaMesasViewModel = new MapaMesasViewModel(MesasViewModel);
         }
 
         public MesasViewModel MesasViewModel { get; }
+        public MenusViewModel MenusViewModel { get; }
         public MapaMesasViewModel MapaMesasViewModel { get; }
 
         public void Cleanup()
         {
             _context.Dispose();
         }
+
+        
     }
 }

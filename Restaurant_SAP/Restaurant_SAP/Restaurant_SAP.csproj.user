@@ -10,6 +10,9 @@
     <Compile Update="Views\MapaMesasView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\MenusView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\MesasView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,6 +22,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MapaMesasView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MenusView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MesasView.xaml">

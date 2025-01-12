@@ -7,13 +7,9 @@
              xmlns:viewmodels="clr-namespace:Restaurant_SAP.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    
+
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <TextBlock Text="AQUI VA EL MAPA" HorizontalAlignment="Center" Margin="10" FontWeight="Bold"/>
-        
+        <TextBlock Text="{Binding CantidadMesas}" />
+        <ListBox ItemsSource="{Binding Mesas}" DisplayMemberPath="Numero" />
     </Grid>
 </UserControl>
