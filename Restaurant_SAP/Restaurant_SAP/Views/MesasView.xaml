@@ -53,10 +53,9 @@
                   SelectedItem="{Binding Estado, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
 
                 <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
-                    <Button Content="Guardar" Command="{Binding DataContext.GuardarCambiosCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5" 
-                            
-                            />
+                    <Button Content="Guardar" Command="{Binding DataContext.GuardarCambiosCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5" />
                     <Button Content="Cancelar" Command="{Binding DataContext.CancelarEdicionCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5"/>
+                    <Button Content="Eliminar" Command="{Binding DataContext.EliminarMesaCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5"/>
                 </StackPanel>
             </Grid>
         </GroupBox>

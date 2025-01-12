@@ -447,6 +447,7 @@ namespace Restaurant_SAP.ViewModels
             }
         }
 
+        /*
         private void EliminarMesa(object parameter)
         {
             try
@@ -465,6 +466,43 @@ namespace Restaurant_SAP.ViewModels
                 MensajeError = $"Error al eliminar mesa: {ex.Message}";
             }
         }
+        */
+
+        private void EliminarMesa(object parameter)
+        {
+            try
+            {
+                if (SelectedMesa != null)
+                {
+                    // Encuentra la mesa en el contexto usando su Id
+                    var mesaAEliminar = _context.Mesas.Find(SelectedMesa.Id);
+
+                    if (mesaAEliminar != null) // Verifica si la mesa existe en la base de datos
+                    {
+                        _context.Mesas.Remove(mesaAEliminar);
+                        _context.SaveChanges();
+                        CargarMesas(); // Recargar las mesas desde la base de datos
+                        SelectedMesa = null; // Limpiar la selección
+                        MesaEnEdicion = null;
+                        MensajeError = "";
+                    }
+                    else
+                    {
+                        MensajeError = "La mesa ya no existe en la base de datos.";
+                    }
+                }
+            }
+            catch (DbUpdateException ex)
+            {
+                MensajeError = $"Error al eliminar la mesa (problema de dependencias): {ex.Message}";
+                // Puedes agregar un manejo más específico de la excepción, como mostrar un mensaje diferente al usuario.
+            }
+            catch (Exception ex)
+            {
+                MensajeError = $"Error al eliminar la mesa: {ex.Message}";
+            }
+        }
+
         private bool CanEliminarMesa(object parameter)
         {
             return SelectedMesa != null;
