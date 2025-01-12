@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Restaurant_SAP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3351b06b7c7019d1923cac80fb816d3d2ec47b1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e983af6e5db669a8de369ce79e450d9483c397c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Restaurant_SAP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Restaurant_SAP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
