@@ -17,11 +17,14 @@ namespace Restaurant_SAP.ViewModels
             MesasViewModel = new MesasViewModel(_context);
             MenusViewModel = new MenusViewModel(_context);
             MapaMesasViewModel = new MapaMesasViewModel(MesasViewModel);
+            ReservasViewModel = new ReservasViewModel(_context,MesasViewModel);
+
         }
 
         public MesasViewModel MesasViewModel { get; }
         public MenusViewModel MenusViewModel { get; }
         public MapaMesasViewModel MapaMesasViewModel { get; }
+        public ReservasViewModel ReservasViewModel { get; }
 
         public void Cleanup()
         {

@@ -10,7 +10,7 @@ namespace Restaurant_SAP.Models
     {
         public int Id { get; set; }
         public int MesaId { get; set; }
-        public virtual Mesa Mesa { get; set; } // Propiedad virtual
+        public virtual Mesa Mesa { get; set; }
         public DateTime FechaHoraInicio { get; set; }
         public DateTime FechaHoraFin { get; set; }
     }

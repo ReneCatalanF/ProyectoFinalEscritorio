@@ -80,3 +80,5 @@ C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoF
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\ref\Restaurant_SAP.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Views\MenusView.g.cs
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Views\MenusView.baml
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Views\ReservasView.g.cs
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Views\ReservasView.baml

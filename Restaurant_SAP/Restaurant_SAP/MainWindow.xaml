@@ -23,6 +23,9 @@
         <TabItem Header="CRUD Mesas">
             <views:MesasView DataContext="{Binding MesasViewModel}"/>
         </TabItem>
+        <TabItem Header="CRUD Reservas">
+            <views:ReservasView DataContext="{Binding ReservasViewModel}"/>
+        </TabItem>
         <TabItem Header="CRUD Menú">
             <views:MenusView DataContext="{Binding MenusViewModel}"/>
         </TabItem>
