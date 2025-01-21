@@ -26,9 +26,9 @@ namespace Restaurant_SAP.Views
         }
         private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            if (!int.TryParse(e.Text, out _)) // Si no se puede convertir a entero
+            if (!int.TryParse(e.Text, out _))
             {
-                e.Handled = true; // Ignorar el carácter ingresado
+                e.Handled = true;
             }
         }
     }

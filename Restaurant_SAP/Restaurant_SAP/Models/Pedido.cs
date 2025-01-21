@@ -18,5 +18,8 @@ namespace Restaurant_SAP.Models
         public EstadoPedido Estado { get; set; }
         public double Precio { get; set; }
         public int Cantidad { get; set; }
+
+        public void ServirPedido() { Estado = EstadoPedido.Servido; }
+        public void PagarPedido() { Estado = EstadoPedido.Pagado; }
     }
 }

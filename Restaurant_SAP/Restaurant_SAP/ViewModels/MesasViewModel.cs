@@ -176,6 +176,7 @@ namespace Restaurant_SAP.ViewModels
                 _context.Mesas.Add(NuevaMesa);
                 _context.SaveChanges();
                 CargarMesas();
+                OnPropertyChanged(nameof(Mesas));
                 NuevaMesa = new Mesa();
                 MensajeError = "";
             }

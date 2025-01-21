@@ -6,8 +6,12 @@
              xmlns:local="clr-namespace:Restaurant_SAP.Views"
              xmlns:viewmodel="clr-namespace:Restaurant_SAP.ViewModels"
              xmlns:models="clr-namespace:Restaurant_SAP.Models"
+             xmlns:converts="clr-namespace:Restaurant_SAP.Converters"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <converts:InverseBoolConverter x:Key="InverseBoolConverter" />
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="200"></RowDefinition>
@@ -29,30 +33,45 @@
         </GroupBox>
 
         <GroupBox Grid.Row="1">
-            <ListBox ItemsSource="{Binding Pedidos}" Margin="10">
+            <ListBox ItemsSource="{Binding Pedidos}" SelectedItem="{Binding SelectedPedido}" Margin="10">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding Mesa.Numero}" FontWeight="Bold" Margin="0,0,5,0"/>
-                            <TextBlock Text="{Binding Menu.Nombre}" Margin="0,0,5,0"/>
-                            <TextBlock Text="{Binding Menu.Descripcion}"/>
-                            <TextBlock Text="{Binding Estado}"/>
-                            <TextBlock Text="{Binding FechaHora}"/>
-                            <TextBlock Text="{Binding Precio}"/>
-                            <TextBlock Text="{Binding Cantidad}"/>
-                        </StackPanel>
+                        <Border BorderBrush="LightGray" BorderThickness="1" Padding="5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Column="0" Text="{Binding Mesa.Numero}" FontWeight="Bold" Margin="5,0" />
+                                <TextBlock Grid.Column="1" Text="{Binding Menu.Nombre}" Margin="5,0" />
+                                <TextBlock Grid.Column="2" Text="{Binding Menu.Descripcion}" Margin="5,0" TextWrapping="Wrap" />
+                                <TextBlock Grid.Column="5" Text="{Binding Precio, StringFormat=C}" HorizontalAlignment="Right" Margin="5,0" />
+                                <TextBlock Grid.Column="3" Text="{Binding Estado}" Margin="5,0" />
+                                <TextBlock Grid.Column="4" Text="{Binding Cantidad}" Margin="5,0" />
+                            </Grid>
+                        </Border>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
         </GroupBox>
 
         <StackPanel Grid.Row="2" Orientation="Horizontal">
-            <TextBlock Text="{Binding SelectedMesa.Numero}" FontWeight="Bold" Margin="0,0,5,0"/>
-            <TextBlock Text="{Binding SelectedMesa.Descripcion}" Margin="0,0,5,0"/>
-            <TextBlock Text="{Binding SelectedMesa.Estado}"/>
 
-            <Button x:Name="abrirPedido" Content="Agregar Pedido" 
+            <Button x:Name="abrirPedido" Content="Agregar Pedido" IsEnabled="{Binding CambiarPedido, 
+                Converter={StaticResource InverseBoolConverter}}"
                 Command="{Binding AbrirModalPedidoCommand}" Margin="5" ></Button>
+            
+            <Button x:Name="cambiarPedido" Content="Pedido Servido" IsEnabled="{Binding CambiarPedido}"
+                Command="{Binding ServirPedidoCommand}" Margin="5" ></Button>
+
+            <Button x:Name="pagarMesa" Content="Pagar Mesa" IsEnabled="{Binding CambiarPedido, 
+                Converter={StaticResource InverseBoolConverter}}"
+                Command="{Binding PagarPedidosMesaCommand}" Margin="5" ></Button>
         </StackPanel>
 
         <Popup x:Name="popupAgregarPedido" IsOpen="{Binding IsModalAbierto}" 

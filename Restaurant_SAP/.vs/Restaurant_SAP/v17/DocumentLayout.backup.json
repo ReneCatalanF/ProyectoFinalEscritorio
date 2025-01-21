@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\views\\mesapedidoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\restaurant_sap\\restaurant_sap\\views\\pedidoaddview_modal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\views\\pedidoaddview_modal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\restaurant_sap\\restaurant_sap\\viewmodels\\mesapedidoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\viewmodels\\mesapedidoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,11 +17,11 @@
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedHeight": 200,
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -54,38 +50,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MesaPedidoViewModel.cs",
               "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\MesaPedidoViewModel.cs",
               "RelativeDocumentMoniker": "Restaurant_SAP\\ViewModels\\MesaPedidoViewModel.cs",
               "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\MesaPedidoViewModel.cs",
               "RelativeToolTip": "Restaurant_SAP\\ViewModels\\MesaPedidoViewModel.cs",
-              "ViewState": "AgIAAOoAAAAAAAAAAAAmwAgBAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAMwMsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-21T12:19:02.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PedidoAddView_Modal.xaml",
-              "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\Restaurant_SAP\\Restaurant_SAP\\Views\\PedidoAddView_Modal.xaml",
-              "RelativeDocumentMoniker": "Restaurant_SAP\\Views\\PedidoAddView_Modal.xaml",
-              "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\Restaurant_SAP\\Restaurant_SAP\\Views\\PedidoAddView_Modal.xaml",
-              "RelativeToolTip": "Restaurant_SAP\\Views\\PedidoAddView_Modal.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-21T14:35:20.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ViewModelLocator.cs",
               "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\ViewModelLocator.cs",
               "RelativeDocumentMoniker": "Restaurant_SAP\\ViewModels\\ViewModelLocator.cs",
               "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\ViewModelLocator.cs",
               "RelativeToolTip": "Restaurant_SAP\\ViewModels\\ViewModelLocator.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-21T12:20:53.061Z",
               "EditorCaption": ""

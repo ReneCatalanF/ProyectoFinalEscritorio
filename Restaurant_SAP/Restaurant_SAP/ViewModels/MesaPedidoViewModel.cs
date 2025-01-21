@@ -17,8 +17,30 @@ namespace Restaurant_SAP.ViewModels
     public class MesaPedidoViewModel : INotifyPropertyChanged
     {
         private readonly RestauranteContext _context;
-        public int cantidad = 1;
         public bool guardarPedido { get; set; }
+
+        private bool _cambiarpedido = false;
+        public bool CambiarPedido
+        {
+            get => _cambiarpedido;
+            set
+            {
+                _cambiarpedido = value;
+                OnPropertyChanged(nameof(CambiarPedido));
+                //_agregarPedidoCommand?.RaiseCanExecuteChanged();
+            }
+        }
+
+        private int cantidad = 0;
+        public int cantidadF {
+            get => cantidad;
+            set
+            {
+                cantidad = value;
+                OnPropertyChanged(nameof(cantidadF));
+                _agregarPedidoCommand?.RaiseCanExecuteChanged();
+            }
+        }
 
         private string _mensajeError;
         public string MensajeError
@@ -94,6 +116,7 @@ namespace Restaurant_SAP.ViewModels
 
                 if (SelectedMesa != null)
                 {
+                    SelectedPedido = null;
                     CargarPedidos();
                     //guardarPedido = true;
                 }
@@ -125,16 +148,26 @@ namespace Restaurant_SAP.ViewModels
             }
         }
 
-
-        private Pedido _newpedido = new Pedido();
-        public Pedido NuevoPedido
+        private Pedido _selectedpedido;
+        public Pedido SelectedPedido
         {
-            get => _newpedido;
+            get => _selectedpedido;
             set
             {
-                _newpedido = value;
-                OnPropertyChanged(nameof(NuevoPedido));
-                //_agregarMenuCommand?.RaiseCanExecuteChanged();
+                _selectedpedido = value;
+                OnPropertyChanged(nameof(SelectedPedido));
+                //_agregarPedidoCommand?.RaiseCanExecuteChanged();
+
+                if (SelectedPedido != null)
+                {
+                    CambiarPedido = true;
+                    guardarPedido = true;
+                }
+                else
+                {
+                    CambiarPedido = false;
+                    guardarPedido = false;
+                }
             }
         }
 
@@ -163,6 +196,12 @@ namespace Restaurant_SAP.ViewModels
 
         private RelayCommand _abrirModalCommand;
         public ICommand AbrirModalPedidoCommand => _abrirModalCommand ??= new RelayCommand(AbrirModalPedido);
+
+        private RelayCommand _servirPedidoCommand;
+        public ICommand ServirPedidoCommand => _servirPedidoCommand ??= new RelayCommand(ServirPedidoSelected);
+
+        private RelayCommand _pagarPedidosMesaCommand;
+        public ICommand PagarPedidosMesaCommand => _pagarPedidosMesaCommand ??= new RelayCommand(PagarPedidosMesa);
 
         private void AbrirModalPedido(object parameter) {
             IsModalAbierto = SelectedMesa != null ? true : false ;
@@ -212,7 +251,9 @@ namespace Restaurant_SAP.ViewModels
 
         public MesaPedidoViewModel(RestauranteContext context, MesasViewModel mesasViewModel, MenusViewModel menusViewModel) {
             _context = context;
-            Pedidos = new ObservableCollection<Pedido>(); ;
+            Pedidos = new ObservableCollection<Pedido>();
+            SelectedPedido = new Pedido();
+            CambiarPedido = false;
 
             Mesas = mesasViewModel.Mesas;
             mesasViewModel.PropertyChanged += MesasViewModel_PropertyChanged;
@@ -244,7 +285,6 @@ namespace Restaurant_SAP.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
         
         private void AgregarPedido(object parameter)
         {
@@ -258,14 +298,14 @@ namespace Restaurant_SAP.ViewModels
                     MenuId = SelectedMenu.Id,
                     FechaHora = DateTime.Now,
                     Estado = EstadoPedido.Solicitado,
-                    Precio = (SelectedMenu.Precio * cantidad),
-                    Cantidad = cantidad
+                    Precio = (SelectedMenu.Precio * cantidadF),
+                    Cantidad = cantidadF
                 };
 
                 _context.Pedidos.Add(nuevoPedido);
                 _context.SaveChanges();
                 IsModalAbierto = false;
-                cantidad = 1;
+                cantidadF = 0;
                 CargarPedidos(); // Recargar los pedidos después de agregar
                 SelectedMenu = null; // Limpiar la selección del menú
             }
@@ -282,5 +322,64 @@ namespace Restaurant_SAP.ViewModels
             return SelectedMesa != null && SelectedMenu != null && cantidad != 0;
         }
 
+        private void ServirPedidoSelected(object parameter) {
+            
+            try
+            {
+                if (SelectedPedido != null)
+                {
+                    
+                    var menuOriginal = _context.Pedidos.Find(SelectedPedido.Id);
+
+                    if (menuOriginal != null)
+                    {
+                        menuOriginal.Estado = EstadoPedido.Servido;
+
+                        _context.SaveChanges();
+                        CargarPedidos();
+                        OnPropertyChanged(nameof(Pedidos));
+                        CambiarPedido = false;
+                        SelectedPedido = null;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MensajeError = $"Error al guardar cambios: {ex.Message}";
+            }
+
+            
+
+        }
+
+        private void PagarPedidosMesa(object parameter) {
+            try
+            {
+                if (Pedidos != null)
+                {
+                    foreach(Pedido pedido in Pedidos){
+                        var menuOriginal = _context.Pedidos.Find(pedido.Id);
+
+                        if (menuOriginal != null)
+                        {
+                            menuOriginal.Estado = EstadoPedido.Pagado;
+
+                            _context.SaveChanges();
+                            
+                        }
+                    }
+                    CargarPedidos();
+                    OnPropertyChanged(nameof(Pedidos));
+                    CambiarPedido = false;
+                    SelectedPedido = null;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MensajeError = $"Error al guardar cambios: {ex.Message}";
+            }
+        }
+        
     }
 }

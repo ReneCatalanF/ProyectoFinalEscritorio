@@ -44,7 +44,7 @@
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Cantidad:" Margin="5"/>
         <TextBox Grid.Row="3" Grid.Column="1" Margin="5"
          PreviewTextInput="TextBox_PreviewTextInput"
-         Text="{Binding cantidad, UpdateSourceTrigger=PropertyChanged}" />
+         Text="{Binding cantidadF, UpdateSourceTrigger=PropertyChanged}" />
         <Button Grid.Row="4" Grid.Column="2" Content="Cancelar" 
                 Margin="5" Command="{Binding CancelarPedidoCommand}" VerticalAlignment="Bottom" />
     </Grid>
