@@ -17,6 +17,7 @@
             <views:MapaMesasView DataContext="{Binding MapaMesasViewModel}"/>
         </TabItem>
         <TabItem Header="Mesas y Pedidos">
+            <views:MesaPedidoView DataContext="{Binding MesaPedidoViewModel}"/>
         </TabItem>
         <TabItem Header="Historial Económico">
         </TabItem>

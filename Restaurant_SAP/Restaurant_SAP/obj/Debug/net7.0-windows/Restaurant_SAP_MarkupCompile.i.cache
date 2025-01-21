@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\App.xaml
-51074641551
+7-2093510635
 
-26954911939
+31-1232139182
 240-1178973257
-MainWindow.xaml;Views\MapaMesasView.xaml;Views\MenusView.xaml;Views\MesasView.xaml;Views\ReservasView.xaml;
+MainWindow.xaml;Views\MapaMesasView.xaml;Views\MenusView.xaml;Views\MesaPedidoView.xaml;Views\MesasView.xaml;Views\PedidoAddView_Modal.xaml;Views\ReservasView.xaml;
 
 True
 

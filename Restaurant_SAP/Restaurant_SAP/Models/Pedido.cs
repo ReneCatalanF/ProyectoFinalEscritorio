@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace Restaurant_SAP.Models
 {
-    public enum EstadoPedido { NoProcesado, Servido, Procesado }
+    public enum EstadoPedido { Solicitado, Servido, Pagado }
     public class Pedido
     {
         public int Id { get; set; }
         public int MesaId { get; set; }
-        public virtual Mesa Mesa { get; set; } // Propiedad virtual
+        public virtual Mesa Mesa { get; set; }
         public int MenuId { get; set; }
-        public virtual Menu Menu { get; set; } // Propiedad virtual
+        public virtual Menu Menu { get; set; }
         public DateTime FechaHora { get; set; }
         public EstadoPedido Estado { get; set; }
         public double Precio { get; set; }
+        public int Cantidad { get; set; }
     }
 }

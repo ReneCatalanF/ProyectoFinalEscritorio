@@ -185,27 +185,6 @@ namespace Restaurant_SAP.ViewModels
             }
         }
 
-        /*
-        private void EliminarMesa(object parameter)
-        {
-            try
-            {
-                if (SelectedMesa != null)
-                {
-                    _context.Mesas.Remove(SelectedMesa);
-                    _context.SaveChanges();
-                    CargarMesas();
-                    SelectedMesa = null;
-                    MesaEnEdicion = null;
-                }
-            }
-            catch (Exception ex)
-            {
-                MensajeError = $"Error al eliminar mesa: {ex.Message}";
-            }
-        }
-        */
-
         private void EliminarMesa(object parameter)
         {
             try
