@@ -19,7 +19,7 @@ namespace Restaurant_SAP.ViewModels
             MapaMesasViewModel = new MapaMesasViewModel(MesasViewModel);
             ReservasViewModel = new ReservasViewModel(_context,MesasViewModel);
             MesaPedidoViewModel = new MesaPedidoViewModel(_context,MesasViewModel,MenusViewModel);
-
+            HistorialEconomicoViewModel = new HistorialEconomicoViewModel(_context, MesaPedidoViewModel);
         }
 
         public MesasViewModel MesasViewModel { get; }
@@ -27,6 +27,7 @@ namespace Restaurant_SAP.ViewModels
         public MapaMesasViewModel MapaMesasViewModel { get; }
         public ReservasViewModel ReservasViewModel { get; }
         public MesaPedidoViewModel MesaPedidoViewModel { get; }
+        public HistorialEconomicoViewModel HistorialEconomicoViewModel { get; }
 
         public void Cleanup()
         {

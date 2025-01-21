@@ -20,6 +20,7 @@
             <views:MesaPedidoView DataContext="{Binding MesaPedidoViewModel}"/>
         </TabItem>
         <TabItem Header="Historial Económico">
+            <views:HistorialEconomicoView DataContext="{Binding HistorialEconomicoViewModel}"/>
         </TabItem>
         <TabItem Header="CRUD Mesas">
             <views:MesasView DataContext="{Binding MesasViewModel}"/>

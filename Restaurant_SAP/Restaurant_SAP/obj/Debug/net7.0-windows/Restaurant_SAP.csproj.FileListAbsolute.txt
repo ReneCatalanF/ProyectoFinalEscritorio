@@ -86,3 +86,5 @@ C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoF
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Views\MesaPedidoView.baml
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Views\PedidoAddView_Modal.g.cs
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Views\PedidoAddView_Modal.baml
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Views\HistorialEconomicoView.g.cs
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Views\HistorialEconomicoView.baml
