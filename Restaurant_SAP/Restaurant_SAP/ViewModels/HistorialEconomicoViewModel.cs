@@ -16,7 +16,16 @@ namespace Restaurant_SAP.ViewModels
         private readonly RestauranteContext _context;
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        public double total = 0;
+        private double _total = 0;
+        public double Total {
+            get => _total;
+            set
+            {
+                _total = value;
+                OnPropertyChanged(nameof(Total));
+
+            }
+        }
 
         private ObservableCollection<Pedido> _pedidos;
         public ObservableCollection<Pedido> Pedidos
@@ -47,11 +56,10 @@ namespace Restaurant_SAP.ViewModels
         public HistorialEconomicoViewModel(RestauranteContext context, MesaPedidoViewModel mesaPedidoViewModel) {
             _context = context;
             Pedidos = new ObservableCollection<Pedido>();
-
+            
             mesaPedidoViewModel.PropertyChanged += MesaPedidosViewModel_PropertyChanged;
 
             CargarPedidos();
-            
         }
 
         private void MesaPedidosViewModel_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -78,7 +86,8 @@ namespace Restaurant_SAP.ViewModels
             {
                 Pedidos.Add(pedido);
             }
-            total = Pedidos.Count();
+
+            Total = Pedidos.Sum(pedido => pedido.Precio);
             OnPropertyChanged(nameof(Pedidos));
         }
     }
