@@ -79,6 +79,8 @@ namespace Restaurant_SAP.ViewModels
         {
             _context = context;
             ReservaEnEdicion = new Reserva();
+            ReservaEnEdicion.FechaHoraInicio = DateTime.Now;
+            ReservaEnEdicion.FechaHoraFin = DateTime.Now;
             Reservas = new ObservableCollection<Reserva>();
             Mesas = mesasViewModel.Mesas; // Asignar la MISMA INSTANCIA de la colección
             Mesas.CollectionChanged += Mesas_CollectionChanged;
@@ -136,7 +138,10 @@ namespace Restaurant_SAP.ViewModels
                 _context.Reservas.Add(_reservaEnEdicion);
                 _context.SaveChanges();
                 CargarReservas();
-                ReservaEnEdicion = null;
+                MensajeError = "";
+                ReservaEnEdicion = new Reserva() ;
+                OnPropertyChanged(nameof(Reservas));
+
             }
             catch (Exception ex)
             {
@@ -207,7 +212,7 @@ namespace Restaurant_SAP.ViewModels
 
         private void CancelarEdicionReserva(object parameter)
         {
-            ReservaEnEdicion = null;
+            ReservaEnEdicion = new Reserva();
         }
     }
 }

@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Threading;
 
 namespace Restaurant_SAP.ViewModels
 {
@@ -27,6 +28,8 @@ namespace Restaurant_SAP.ViewModels
         private string _mensajeError;
         private ObservableCollection<Mesa> _mesas;
         private Mesa _nuevaMesa = new Mesa();
+
+        private DispatcherTimer _timer;
 
         public bool IsEditing { get; set; }
 
@@ -59,6 +62,7 @@ namespace Restaurant_SAP.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        //public ReservasViewModel ReservasViewModel { get; set; }
 
         public Mesa SelectedMesa
         {
@@ -133,16 +137,16 @@ namespace Restaurant_SAP.ViewModels
             }
         }
 
-
         public MesasViewModel(RestauranteContext context)
         {
             _context = context;
             Mesas = new ObservableCollection<Mesa>();
-            
+
+
             CargarMesas();
+            IniciarTimer();
 
         }
-
         private void CargarMesas()
         {
             Mesas.Clear();
@@ -272,13 +276,56 @@ namespace Restaurant_SAP.ViewModels
             MesaEnEdicion = null;
             SelectedMesa = null;
         }
+
+
+        private void IniciarTimer()
+        {
+            _timer = new DispatcherTimer();
+            _timer.Interval = TimeSpan.FromMinutes(1);
+            _timer.Tick += VerificarReservas;
+            _timer.Start();
+        }
+
+        private void VerificarReservas(object sender, EventArgs e)
+        {
+            DateTime ahora = DateTime.Now;
+
+            var reservasActivas = _context.Reservas
+            .Include(r => r.Mesa)
+            .Where(r => r.FechaHoraFin > ahora)
+            .ToList();
+
+            // Usar la colección de reservas del ReservasViewModel
+            foreach (var reserva in reservasActivas)
+            {
+                if (reserva.FechaHoraInicio <= ahora && reserva.FechaHoraFin >= ahora && reserva.Mesa.Estado != EstadoMesa.Ocupada)
+                {
+                    ActualizarEstadoMesa(reserva.MesaId, EstadoMesa.Ocupada);
+                }
+                else if (reserva.FechaHoraInicio.AddMinutes(-10) <= ahora && reserva.FechaHoraInicio > ahora && reserva.Mesa.Estado != EstadoMesa.Pronto)
+                {
+                    ActualizarEstadoMesa(reserva.MesaId, EstadoMesa.Pronto);
+                }
+                else if (reserva.FechaHoraInicio > ahora && reserva.Mesa.Estado != EstadoMesa.Reservada)
+                {
+                    ActualizarEstadoMesa(reserva.MesaId, EstadoMesa.Reservada);
+                }
+            }
+        }
+
+        public void ActualizarEstadoMesa(int mesaId, EstadoMesa nuevoEstado)
+        {
+            var mesa = _context.Mesas.Find(mesaId);
+            if (mesa != null)
+            {
+                mesa.Estado = nuevoEstado;
+                _context.SaveChanges();
+                CargarMesas();
+                OnPropertyChanged(nameof(Mesas));
+            }
+        }
+
+
     }
-    
-
-
-    
-    
-
-
 }
 

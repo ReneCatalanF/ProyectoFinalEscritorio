@@ -22,13 +22,13 @@
         <TabItem Header="Historial Económico">
             <views:HistorialEconomicoView DataContext="{Binding HistorialEconomicoViewModel}"/>
         </TabItem>
-        <TabItem Header="CRUD Mesas">
+        <TabItem Header="Administrar Mesas" HorizontalAlignment="Right">
             <views:MesasView DataContext="{Binding MesasViewModel}"/>
         </TabItem>
-        <TabItem Header="CRUD Reservas">
+        <TabItem Header="Administrar Reservas" HorizontalAlignment="Right">
             <views:ReservasView DataContext="{Binding ReservasViewModel}"/>
         </TabItem>
-        <TabItem Header="CRUD Menú">
+        <TabItem Header="Administrar Menú" HorizontalAlignment="Right">
             <views:MenusView DataContext="{Binding MenusViewModel}"/>
         </TabItem>
     </TabControl>

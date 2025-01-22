@@ -9,7 +9,40 @@
              d:DesignHeight="450" d:DesignWidth="800">
 
     <Grid>
-        <TextBlock Text="{Binding CantidadMesas}" />
-        <ListBox ItemsSource="{Binding Mesas}" DisplayMemberPath="Numero" />
+        <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1" Padding="10" Margin="10">
+            <ItemsControl ItemsSource="{Binding Mesas}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="{Binding TamañoSeleccionado}" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Margin="5" CornerRadius="5">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="Background" Value="LightGreen" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Estado}" Value="Ocupada">
+                                            <Setter Property="Background" Value="LightCoral" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Estado}" Value="Reservada">
+                                            <Setter Property="Background" Value="Orange" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Estado}" Value="Pronto">
+                                            <Setter Property="Background" Value="Purple" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <TextBlock Text="[Icono Mesa]" HorizontalAlignment="Center" />
+                                <TextBlock Text="{Binding Numero}" HorizontalAlignment="Center" FontWeight="Bold" />
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Border>
     </Grid>
 </UserControl>

@@ -16,6 +16,8 @@ namespace Restaurant_SAP.ViewModels
         private readonly RestauranteContext _context;
         public event PropertyChangedEventHandler? PropertyChanged;
 
+        public double total = 0;
+
         private ObservableCollection<Pedido> _pedidos;
         public ObservableCollection<Pedido> Pedidos
         {
@@ -76,6 +78,7 @@ namespace Restaurant_SAP.ViewModels
             {
                 Pedidos.Add(pedido);
             }
+            total = Pedidos.Count();
             OnPropertyChanged(nameof(Pedidos));
         }
     }

@@ -16,7 +16,6 @@ namespace Restaurant_SAP.ViewModels
     public class MapaMesasViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<Mesa> _mesas;
-
         public ObservableCollection<Mesa> Mesas
         {
             get => _mesas;
@@ -33,12 +32,34 @@ namespace Restaurant_SAP.ViewModels
             }
         }
 
-        public string CantidadMesas => $"Cantidad de Mesas: {Mesas?.Count ?? 0}";
+        public ObservableCollection<int> TamañosMapa { get; } = new ObservableCollection<int> { 3, 4, 5 };
+        private int _tamañoSeleccionado = 4;
+        public int TamañoSeleccionado
+        {
+            get => _tamañoSeleccionado;
+            set
+            {
+                _tamañoSeleccionado = value;
+                OnPropertyChanged(nameof(TamañoSeleccionado));
+            }
+        }
+
+        private int _cantidadMesas;
+        public int CantidadMesas
+        {
+            get => _cantidadMesas;
+            set
+            {
+                _cantidadMesas = value;
+                OnPropertyChanged(nameof(CantidadMesas));
+            }
+        }
 
         public MapaMesasViewModel(MesasViewModel mesasViewModel)
         {
             
             Mesas = mesasViewModel.Mesas;
+            CantidadMesas = Mesas.Count;
 
             mesasViewModel.PropertyChanged += MesasViewModel_PropertyChanged;
         }
@@ -59,10 +80,16 @@ namespace Restaurant_SAP.ViewModels
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
+
         protected virtual void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+
+
+
+
     }
 
 }
