@@ -36,19 +36,19 @@ namespace Restaurant_SAP.ViewModels
             }
         }
 
-        private string _filtroMesa;
-        public string FiltroMesa
+        private object _mesaSeleccionada; // Cambiamos el tipo a object para aceptar el "Todos"
+        public object MesaSeleccionada
         {
-            get => _filtroMesa;
+            get => _mesaSeleccionada;
             set
             {
-                _filtroMesa = value;
-                OnPropertyChanged(nameof(FiltroMesa));
+                _mesaSeleccionada = value;
+                OnPropertyChanged(nameof(MesaSeleccionada));
             }
         }
 
-        private Menu _menuSeleccionado;
-        public Menu MenuSeleccionado
+        private object _menuSeleccionado; // Cambiamos el tipo a object para aceptar el "Todos"
+        public object MenuSeleccionado
         {
             get => _menuSeleccionado;
             set
@@ -124,6 +124,7 @@ namespace Restaurant_SAP.ViewModels
             // Cargar Menús
             Menus.Clear();
             var menusDesdeDb = _context.Menus.ToList();
+            Menus.Add(new Menu { Id = 0, Nombre = "Todos" }); // Añadir "Todos" al principio
             foreach (var menu in menusDesdeDb)
             {
                 Menus.Add(menu);
@@ -133,6 +134,7 @@ namespace Restaurant_SAP.ViewModels
             // Cargar Mesas
             Mesas.Clear();
             var mesasDesdeDb = _context.Mesas.ToList();
+            Mesas.Add(new Mesa { Id = 0, Numero = 0 }); // Añadir "Todos" al principio (usamos 0.1 para evitar conflicto con mesas reales)
             foreach (var mesa in mesasDesdeDb)
             {
                 Mesas.Add(mesa);
@@ -144,24 +146,24 @@ namespace Restaurant_SAP.ViewModels
             Total = 0;
             OnPropertyChanged(nameof(Pedidos));
             OnPropertyChanged(nameof(Total));
+
+            // Establecer "Todos" como la selección inicial
+            MesaSeleccionada = Mesas.First();
+            MenuSeleccionado = Menus.First();
         }
 
         public void BuscarPedidos(object parameter) // El Execute de tu RelayCommand espera un objeto
         {
             var filtroPedidos = _context.Pedidos.Where(p => p.Estado == EstadoPedido.Pagado);
 
-            if (!string.IsNullOrEmpty(FiltroMesa))
+            if (MesaSeleccionada != null && (MesaSeleccionada as Mesa)?.Id != 0) // Filtrar si no es "Todos"
             {
-                if (int.TryParse(FiltroMesa, out int numeroMesa))
-                {
-                    filtroPedidos = filtroPedidos.Where(p => p.Mesa.Numero == numeroMesa);
-                }
-                // Si no se puede convertir a entero, no se aplica el filtro de mesa
+                filtroPedidos = filtroPedidos.Where(p => p.MesaId == (MesaSeleccionada as Mesa).Id);
             }
 
-            if (MenuSeleccionado != null)
+            if (MenuSeleccionado != null && (MenuSeleccionado as Menu)?.Id != 0) // Filtrar si no es "Todos"
             {
-                filtroPedidos = filtroPedidos.Where(p => p.MenuId == MenuSeleccionado.Id);
+                filtroPedidos = filtroPedidos.Where(p => p.MenuId == (MenuSeleccionado as Menu).Id);
             }
 
             if (FechaDesde.HasValue)
