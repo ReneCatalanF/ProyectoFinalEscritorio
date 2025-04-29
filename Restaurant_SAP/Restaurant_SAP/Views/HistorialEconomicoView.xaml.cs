@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Restaurant_SAP.DB;
+using Restaurant_SAP.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,17 @@ namespace Restaurant_SAP.Views
         public HistorialEconomicoView()
         {
             InitializeComponent();
+        }
+
+        private void HistorialEconomicoView_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if ((bool)e.NewValue) // Si el UserControl se vuelve visible
+            {
+                if (DataContext is HistorialEconomicoViewModel viewModel)
+                {
+                    viewModel.CargarMenusYMesas();
+                }
+            }
         }
     }
 }

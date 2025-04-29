@@ -1,18 +1,37 @@
 ﻿<UserControl x:Class="Restaurant_SAP.Views.HistorialEconomicoView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Restaurant_SAP.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800"
+             IsVisibleChanged="HistorialEconomicoView_IsVisibleChanged">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <ListView Grid.Row="0" ItemsSource="{Binding Pedidos}" Margin="10" HorizontalAlignment="Stretch">
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+
+            <TextBlock Text="Buscar por Mesa:" Margin="5,0,5,0" VerticalAlignment="Center" />
+            <TextBox x:Name="txtBuscarMesa" Width="50" Margin="0,0,10,0" Text="{Binding FiltroMesa, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Text="Filtrar por Menú:" Margin="5,0,5,0" VerticalAlignment="Center" />
+            <ComboBox x:Name="cmbFiltrarMenu" Width="150" Margin="0,0,10,0" ItemsSource="{Binding Menus}" DisplayMemberPath="Nombre" SelectedItem="{Binding MenuSeleccionado}" />
+
+            <TextBlock Text="Desde:" Margin="5,0,5,0" VerticalAlignment="Center" />
+            <DatePicker x:Name="dpDesde" Margin="0,0,10,0" SelectedDate="{Binding FechaDesde, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <TextBlock Text="Hasta:" Margin="5,0,5,0" VerticalAlignment="Center" />
+            <DatePicker x:Name="dpHasta" SelectedDate="{Binding FechaHasta, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Button Content="Buscar" Margin="10,0,0,0" Command="{Binding BuscarPedidosCommand}" />
+        </StackPanel>
+
+        <ListView Grid.Row="1" ItemsSource="{Binding Pedidos}" Margin="10" HorizontalAlignment="Stretch">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Fecha/Hora" DisplayMemberBinding="{Binding FechaHora, StringFormat=dd/MM/yyyy HH:mm}" Width="Auto" />
@@ -30,7 +49,7 @@
             </ListView.ItemContainerStyle>
         </ListView>
 
-        <Border Grid.Row="1" BorderBrush="LightGray" BorderThickness="1,0,0,0" Padding="5" Background="#EEEEEE">
+        <Border Grid.Row="2" BorderBrush="LightGray" BorderThickness="1,0,0,0" Padding="5" Background="#EEEEEE">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
