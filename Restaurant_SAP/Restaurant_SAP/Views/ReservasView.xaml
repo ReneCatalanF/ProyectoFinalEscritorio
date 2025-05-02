@@ -1,14 +1,15 @@
 ﻿<UserControl x:Class="Restaurant_SAP.Views.ReservasView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Restaurant_SAP.Views"
              xmlns:viewmodels="clr-namespace:Restaurant_SAP.ViewModels"
              xmlns:models="clr-namespace:Restaurant_SAP.Models"
              xmlns:converters="clr-namespace:Restaurant_SAP.Converters"
              xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
-             mc:Ignorable="d" 
+             xmlns:p="clr-namespace:Restaurant_SAP.Properties"
+             mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
         <converters:NullToBooleanConverter x:Key="NullToBooleanConverter"/>
@@ -21,9 +22,10 @@
         </Grid.RowDefinitions>
 
         <ComboBox Grid.Row="0" Margin="5"
-          ItemsSource="{Binding DataContext.Mesas, RelativeSource={RelativeSource AncestorType=UserControl}}"
-          DisplayMemberPath="Numero"
-          SelectedItem="{Binding MesaSeleccionada, UpdateSourceTrigger=PropertyChanged}" />
+                  ItemsSource="{Binding DataContext.Mesas, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                  DisplayMemberPath="Numero"
+                  SelectedItem="{Binding MesaSeleccionada, UpdateSourceTrigger=PropertyChanged}"
+                  ToolTip="{x:Static p:Resources.ComboBox_SeleccionarMesa}"/>
 
         <ListBox Grid.Row="1" Margin="5"
                  ItemsSource="{Binding Reservas}"
@@ -38,7 +40,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <GroupBox Grid.Row="2" Header="Edición de Reserva" Margin="5" DataContext="{Binding ReservaEnEdicion}">
+        <GroupBox Grid.Row="2" Header="{x:Static p:Resources.GroupBox_EdicionReserva}" Margin="5" DataContext="{Binding ReservaEnEdicion}">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
@@ -50,19 +52,19 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="Inicio:" Margin="5"/>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static p:Resources.ListBox_Reservas_FechaInicio}" Margin="5"/>
                 <xctk:DateTimePicker Grid.Row="0" Grid.Column="1" Value="{Binding FechaHoraInicio, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
-                <TextBlock Grid.Row="1" Grid.Column="0" Text="Fin:" Margin="5"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static p:Resources.ListBox_Reservas_FechaFin}" Margin="5"/>
                 <xctk:DateTimePicker Grid.Row="1" Grid.Column="1" Value="{Binding FechaHoraFin, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
-                
+
                 <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
-                    <Button Content="Agregar" Margin="5"
+                    <Button Content="{x:Static p:Resources.Button_AgregarReserva}" Margin="5"
                             Command="{Binding DataContext.AgregarReservaCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"/>
-                    <Button Content="Guardar" Margin="5"
+                    <Button Content="{x:Static p:Resources.Button_GuardarReserva}" Margin="5"
                             Command="{Binding DataContext.GuardarCambiosReservaCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"/>
-                    <Button Content="Eliminar" Margin="5"
+                    <Button Content="{x:Static p:Resources.Button_EliminarReserva}" Margin="5"
                             Command="{Binding DataContext.EliminarReservaCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"/>
-                    <Button Content="Cancelar" Margin="5"
+                    <Button Content="{x:Static p:Resources.Button_CancelarReserva}" Margin="5"
                             Command="{Binding DataContext.CancelarEdicionReservaCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" />
                 </StackPanel>
             </Grid>

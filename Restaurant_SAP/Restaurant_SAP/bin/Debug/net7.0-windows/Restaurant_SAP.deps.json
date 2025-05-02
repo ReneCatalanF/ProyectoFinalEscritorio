@@ -16,6 +16,14 @@
         },
         "runtime": {
           "Restaurant_SAP.dll": {}
+        },
+        "resources": {
+          "en-US/Restaurant_SAP.resources.dll": {
+            "locale": "en-US"
+          },
+          "fr-FR/Restaurant_SAP.resources.dll": {
+            "locale": "fr-FR"
+          }
         }
       },
       "Azure.Core/1.35.0": {

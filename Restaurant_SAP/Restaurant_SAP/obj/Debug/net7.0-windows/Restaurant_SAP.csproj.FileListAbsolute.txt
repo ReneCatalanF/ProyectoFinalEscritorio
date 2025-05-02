@@ -110,6 +110,8 @@ C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoF
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\Restaurant_SAP.runtimeconfig.json
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\Restaurant_SAP.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\Restaurant_SAP.pdb
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\en-US\Restaurant_SAP.resources.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\fr-FR\Restaurant_SAP.resources.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\Azure.Core.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\Azure.Identity.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\Castle.Core.dll
@@ -215,11 +217,17 @@ C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoF
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Views\PedidoAddView_Modal.baml
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Views\ReservasView.baml
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Restaurant_SAP.g.resources
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Restaurant_SAP.Properties.Resources.resources
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Restaurant_SAP.Properties.Resources.en-US.resources
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Restaurant_SAP.Properties.Resources.fr-FR.resources
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Restaurant_SAP.csproj.GenerateResource.cache
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Restaurant_SAP.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Restaurant_SAP.AssemblyInfoInputs.cache
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Restaurant_SAP.AssemblyInfo.cs
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Restaurant_SAP.csproj.CoreCompileInputs.cache
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Restaurant_SAP.sourcelink.json
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\en-US\Restaurant_SAP.resources.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\fr-FR\Restaurant_SAP.resources.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Restaura.8609E491.Up2Date
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\Restaurant_SAP.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Debug\net7.0-windows\refint\Restaurant_SAP.dll
