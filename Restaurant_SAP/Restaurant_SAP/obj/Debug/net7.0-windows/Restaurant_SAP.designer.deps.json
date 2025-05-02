@@ -571,6 +571,66 @@
           }
         }
       },
+      "PDFsharp-MigraDoc-WPF/6.1.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/MigraDoc.DocumentObjectModel.dll": {
+            "assemblyVersion": "6.1.1.0",
+            "fileVersion": "6.1.1.7121"
+          },
+          "lib/net6.0-windows7.0/MigraDoc.Rendering-wpf.dll": {
+            "assemblyVersion": "6.1.1.0",
+            "fileVersion": "6.1.1.7121"
+          },
+          "lib/net6.0-windows7.0/MigraDoc.RtfRendering-wpf.dll": {
+            "assemblyVersion": "6.1.1.0",
+            "fileVersion": "6.1.1.7121"
+          },
+          "lib/net6.0-windows7.0/PdfSharp-wpf.dll": {
+            "assemblyVersion": "6.1.1.0",
+            "fileVersion": "6.1.1.7121"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.Charting-wpf.dll": {
+            "assemblyVersion": "6.1.1.0",
+            "fileVersion": "6.1.1.7121"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.Quality-wpf.dll": {
+            "assemblyVersion": "6.1.1.0",
+            "fileVersion": "6.1.1.7121"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.Snippets-wpf.dll": {
+            "assemblyVersion": "6.1.1.0",
+            "fileVersion": "6.1.1.7121"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.System.dll": {
+            "assemblyVersion": "6.1.1.0",
+            "fileVersion": "6.1.1.7121"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.WPFonts.dll": {
+            "assemblyVersion": "6.1.1.0",
+            "fileVersion": "6.1.1.7121"
+          }
+        },
+        "resources": {
+          "lib/net6.0-windows7.0/de/MigraDoc.DocumentObjectModel.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/MigraDoc.Rendering-wpf.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/MigraDoc.RtfRendering-wpf.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/PdfSharp-wpf.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/PdfSharp.Charting-wpf.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
       "System.CodeDom/4.4.0": {
         "runtime": {
           "lib/netstandard2.0/System.CodeDom.dll": {
@@ -1190,6 +1250,13 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "PDFsharp-MigraDoc-WPF/6.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/5PXAIV2ZqBTQeDLzSU3jJVSJ0W+VVpvWHHMw4Z/pYgm5WmuBnwyzO8FJE9hue+YQZV+A9GfJTxCEMGo+qJ4LQ==",
+      "path": "pdfsharp-migradoc-wpf/6.1.1",
+      "hashPath": "pdfsharp-migradoc-wpf.6.1.1.nupkg.sha512"
     },
     "System.CodeDom/4.4.0": {
       "type": "package",

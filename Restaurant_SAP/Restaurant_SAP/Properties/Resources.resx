@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="WindowTitle" xml:space="preserve">
+        <value>Gestión de Restaurante SAP</value>
+    </data>
+    <data name="TabHeader_MapaMesas" xml:space="preserve">
+        <value>Mapa de Mesas</value>
+    </data>
+    <data name="TabHeader_MesasPedidos" xml:space="preserve">
+        <value>Mesas y Pedidos</value>
+    </data>
+    <data name="TabHeader_HistorialEconomico" xml:space="preserve">
+        <value>Historial Económico</value>
+    </data>
+    <data name="TabHeader_AdministrarMesas" xml:space="preserve">
+        <value>Administrar Mesas</value>
+    </data>
+    <data name="TabHeader_AdministrarReservas" xml:space="preserve">
+        <value>Administrar Reservas</value>
+    </data>
+    <data name="TabHeader_AdministrarMenu" xml:space="preserve">
+        <value>Administrar Menú</value>
+    </data>
+    <data name="ComboBox_SeleccionarMesa" xml:space="preserve">
+        <value>-- Seleccionar Mesa --</value>
+    </data>
+    <data name="ListBox_Reservas_FechaInicio" xml:space="preserve">
+        <value>Inicio:</value>
+    </data>
+    <data name="ListBox_Reservas_FechaFin" xml:space="preserve">
+        <value>Fin:</value>
+    </data>
+    <data name="GroupBox_EdicionReserva" xml:space="preserve">
+        <value>Edición de Reserva</value>
+    </data>
+    <data name="Button_AgregarReserva" xml:space="preserve">
+        <value>Agregar</value>
+    </data>
+    <data name="Button_GuardarReserva" xml:space="preserve">
+        <value>Guardar</value>
+    </data>
+    <data name="Button_EliminarReserva" xml:space="preserve">
+        <value>Eliminar</value>
+    </data>
+    <data name="Button_CancelarReserva" xml:space="preserve">
+        <value>Cancelar</value>
+    </data>
+    <data name="TextBlock_AgregandoPedido" xml:space="preserve">
+        <value>Agregando Pedido</value>
+    </data>
+    <data name="TextBlock_MesaSeleccionada" xml:space="preserve">
+        <value>Mesa Seleccionada: </value>
+    </data>
+    <data name="TextBlock_Menu" xml:space="preserve">
+        <value>Menú:</value>
+    </data>
+    <data name="Button_AceptarPedido" xml:space="preserve">
+        <value>Aceptar</value>
+    </data>
+    <data name="TextBlock_Cantidad" xml:space="preserve">
+        <value>Cantidad:</value>
+    </data>
+    <data name="Button_CancelarPedido" xml:space="preserve">
+        <value>Cancelar</value>
+    </data>
+    <data name="ListBox_Mesas_Numero" xml:space="preserve">
+        <value>Número</value>
+    </data>
+    <data name="ListBox_Mesas_Descripcion" xml:space="preserve">
+        <value>Descripción</value>
+    </data>
+    <data name="ListBox_Mesas_Estado" xml:space="preserve">
+        <value>Estado</value>
+    </data>
+    <data name="GroupBox_EdicionMesa" xml:space="preserve">
+        <value>Edición de Mesa</value>
+    </data>
+    <data name="TextBlock_NumeroMesa" xml:space="preserve">
+        <value>Número:</value>
+    </data>
+    <data name="TextBlock_DescripcionMesa" xml:space="preserve">
+        <value>Descripción:</value>
+    </data>
+    <data name="TextBlock_EstadoMesa" xml:space="preserve">
+        <value>Estado:</value>
+    </data>
+    <data name="Button_GuardarMesa" xml:space="preserve">
+        <value>Guardar</value>
+    </data>
+    <data name="Button_CancelarMesa" xml:space="preserve">
+        <value>Cancelar</value>
+    </data>
+    <data name="Button_EliminarMesa" xml:space="preserve">
+        <value>Eliminar</value>
+    </data>
+    <data name="GroupBox_NuevaMesa" xml:space="preserve">
+        <value>Nueva Mesa</value>
+    </data>
+    <data name="Button_AgregarNuevaMesa" xml:space="preserve">
+        <value>Agregar Mesa</value>
+    </data>
+    <data name="ListBox_Pedidos_MesaNumero" xml:space="preserve">
+        <value>Nº Mesa</value>
+    </data>
+    <data name="ListBox_Pedidos_MenuNombre" xml:space="preserve">
+        <value>Nombre Menú</value>
+    </data>
+    <data name="ListBox_Pedidos_MenuDescripcion" xml:space="preserve">
+        <value>Descripción Menú</value>
+    </data>
+    <data name="ListBox_Pedidos_EstadoPedido" xml:space="preserve">
+        <value>Estado</value>
+    </data>
+    <data name="ListBox_Pedidos_Cantidad" xml:space="preserve">
+        <value>Cantidad</value>
+    </data>
+    <data name="ListBox_Pedidos_Precio" xml:space="preserve">
+        <value>Precio</value>
+    </data>
+    <data name="Button_AgregarPedidoMesa" xml:space="preserve">
+        <value>Agregar Pedido</value>
+    </data>
+    <data name="Button_PedidoServido" xml:space="preserve">
+        <value>Pedido Servido</value>
+    </data>
+    <data name="Button_PagarMesa" xml:space="preserve">
+        <value>Pagar Mesa</value>
+    </data>
+    <data name="ListBox_Menus_Nombre" xml:space="preserve">
+        <value>Nombre</value>
+    </data>
+    <data name="ListBox_Menus_Descripcion" xml:space="preserve">
+        <value>Descripción</value>
+    </data>
+    <data name="ListBox_Menus_Precio" xml:space="preserve">
+        <value>Precio</value>
+    </data>
+    <data name="GroupBox_EdicionMenu" xml:space="preserve">
+        <value>Edición de Menu</value>
+    </data>
+    <data name="TextBlock_NombreMenu" xml:space="preserve">
+        <value>Nombre:</value>
+    </data>
+    <data name="TextBlock_DescripcionMenu" xml:space="preserve">
+        <value>Descripción:</value>
+    </data>
+    <data name="TextBlock_PrecioMenu" xml:space="preserve">
+        <value>Precio:</value>
+    </data>
+    <data name="Button_GuardarMenu" xml:space="preserve">
+        <value>Guardar</value>
+    </data>
+    <data name="Button_CancelarMenu" xml:space="preserve">
+        <value>Cancelar</value>
+    </data>
+    <data name="Button_EliminarMenu" xml:space="preserve">
+        <value>Eliminar</value>
+    </data>
+    <data name="GroupBox_NuevoMenu" xml:space="preserve">
+        <value>Nueva Menu</value>
+    </data>
+    <data name="Button_AgregarNuevoMenu" xml:space="preserve">
+        <value>Agregar Menu</value>
+    </data>
+    <data name="TextBlock_IconoMesa" xml:space="preserve">
+        <value>[Icono Mesa]</value>
+    </data>
+    <data name="TextBlock_FiltrarPorMesa" xml:space="preserve">
+        <value>Filtrar por Mesa:</value>
+    </data>
+    <data name="TextBlock_FiltrarPorMenu" xml:space="preserve">
+        <value>Filtrar por Menú:</value>
+    </data>
+    <data name="TextBlock_DesdeFecha" xml:space="preserve">
+        <value>Desde:</value>
+    </data>
+    <data name="TextBlock_HastaFecha" xml:space="preserve">
+        <value>Hasta:</value>
+    </data>
+    <data name="Button_BuscarPedidos" xml:space="preserve">
+        <value>Buscar</value>
+    </data>
+    <data name="GridViewColumn_FechaHora" xml:space="preserve">
+        <value>Fecha/Hora</value>
+    </data>
+    <data name="GridViewColumn_NombreMenu" xml:space="preserve">
+        <value>Nombre Menú</value>
+    </data>
+    <data name="GridViewColumn_DescripcionMenu" xml:space="preserve">
+        <value>Descripción Menú</value>
+    </data>
+    <data name="GridViewColumn_NumeroMesaHistorial" xml:space="preserve">
+        <value>Nº Mesa</value>
+    </data>
+    <data name="GridViewColumn_PrecioHistorial" xml:space="preserve">
+        <value>Precio</value>
+    </data>
+    <data name="TextBlock_Total" xml:space="preserve">
+        <value>Total:</value>
+    </data>
+    <data name="Button_GenerarPDF" xml:space="preserve">
+        <value>Generar PDF</value>
+    </data>
+</root>

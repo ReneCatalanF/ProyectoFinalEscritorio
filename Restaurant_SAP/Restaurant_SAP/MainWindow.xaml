@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Restaurant_SAP"
         xmlns:views="clr-namespace:Restaurant_SAP.Views"
         xmlns:viewsmodel="clr-namespace:Restaurant_SAP.ViewModels"
+        xmlns:p="clr-namespace:Restaurant_SAP.Properties"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 
@@ -13,22 +14,22 @@
         <viewsmodel:ViewModelLocator x:Key="Locator"/>
     </Window.Resources>
     <TabControl DataContext="{StaticResource Locator}">
-        <TabItem Header="Mapa de Mesas">
+        <TabItem Header="{x:Static p:Resources.TabHeader_MapaMesas}">
             <views:MapaMesasView DataContext="{Binding MapaMesasViewModel}"/>
         </TabItem>
-        <TabItem Header="Mesas y Pedidos">
+        <TabItem Header="{x:Static p:Resources.TabHeader_MesasPedidos}">
             <views:MesaPedidoView DataContext="{Binding MesaPedidoViewModel}"/>
         </TabItem>
-        <TabItem Header="Historial Económico">
+        <TabItem Header="{x:Static p:Resources.TabHeader_HistorialEconomico}">
             <views:HistorialEconomicoView DataContext="{Binding HistorialEconomicoViewModel}"/>
         </TabItem>
-        <TabItem Header="Administrar Mesas" HorizontalAlignment="Right">
+        <TabItem Header="{x:Static p:Resources.TabHeader_AdministrarMesas}" HorizontalAlignment="Right">
             <views:MesasView DataContext="{Binding MesasViewModel}"/>
         </TabItem>
-        <TabItem Header="Administrar Reservas" HorizontalAlignment="Right">
+        <TabItem Header="{x:Static p:Resources.TabHeader_AdministrarReservas}" HorizontalAlignment="Right">
             <views:ReservasView DataContext="{Binding ReservasViewModel}"/>
         </TabItem>
-        <TabItem Header="Administrar Menú" HorizontalAlignment="Right">
+        <TabItem Header="{x:Static p:Resources.TabHeader_AdministrarMenu}" HorizontalAlignment="Right">
             <views:MenusView DataContext="{Binding MenusViewModel}"/>
         </TabItem>
     </TabControl>

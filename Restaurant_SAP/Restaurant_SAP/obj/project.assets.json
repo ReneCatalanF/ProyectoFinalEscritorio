@@ -798,6 +798,90 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "PDFsharp-MigraDoc-WPF/6.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/MigraDoc.DocumentObjectModel.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/MigraDoc.Rendering-wpf.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/MigraDoc.RtfRendering-wpf.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/PdfSharp-wpf.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.Charting-wpf.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.Quality-wpf.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.Snippets-wpf.dll": {
+            "related": ".pdb"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.System.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.WPFonts.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/MigraDoc.DocumentObjectModel.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/MigraDoc.Rendering-wpf.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/MigraDoc.RtfRendering-wpf.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/PdfSharp-wpf.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.Charting-wpf.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.Quality-wpf.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.Snippets-wpf.dll": {
+            "related": ".pdb"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.System.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/PdfSharp.WPFonts.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ],
+        "resource": {
+          "lib/net6.0-windows7.0/de/MigraDoc.DocumentObjectModel.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/MigraDoc.Rendering-wpf.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/MigraDoc.RtfRendering-wpf.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/PdfSharp-wpf.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/PdfSharp.Charting-wpf.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
       "System.CodeDom/4.4.0": {
         "type": "package",
         "compile": {
@@ -2357,6 +2441,95 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "PDFsharp-MigraDoc-WPF/6.1.1": {
+      "sha512": "/5PXAIV2ZqBTQeDLzSU3jJVSJ0W+VVpvWHHMw4Z/pYgm5WmuBnwyzO8FJE9hue+YQZV+A9GfJTxCEMGo+qJ4LQ==",
+      "type": "package",
+      "path": "pdfsharp-migradoc-wpf/6.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "images/MigraDoc-128x128.png",
+        "lib/net472/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net472/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net472/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net472/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net472/Microsoft.Extensions.Logging.dll",
+        "lib/net472/Microsoft.Extensions.Options.dll",
+        "lib/net472/Microsoft.Extensions.Primitives.dll",
+        "lib/net472/MigraDoc.DocumentObjectModel.dll",
+        "lib/net472/MigraDoc.DocumentObjectModel.pdb",
+        "lib/net472/MigraDoc.DocumentObjectModel.xml",
+        "lib/net472/MigraDoc.Rendering-wpf.dll",
+        "lib/net472/MigraDoc.Rendering-wpf.pdb",
+        "lib/net472/MigraDoc.Rendering-wpf.xml",
+        "lib/net472/MigraDoc.RtfRendering-wpf.dll",
+        "lib/net472/MigraDoc.RtfRendering-wpf.pdb",
+        "lib/net472/MigraDoc.RtfRendering-wpf.xml",
+        "lib/net472/PdfSharp-wpf.dll",
+        "lib/net472/PdfSharp-wpf.pdb",
+        "lib/net472/PdfSharp-wpf.xml",
+        "lib/net472/PdfSharp.Charting-wpf.dll",
+        "lib/net472/PdfSharp.Charting-wpf.pdb",
+        "lib/net472/PdfSharp.Charting-wpf.xml",
+        "lib/net472/PdfSharp.Quality-wpf.dll",
+        "lib/net472/PdfSharp.Quality-wpf.pdb",
+        "lib/net472/PdfSharp.Quality-wpf.xml",
+        "lib/net472/PdfSharp.Snippets-wpf.dll",
+        "lib/net472/PdfSharp.Snippets-wpf.pdb",
+        "lib/net472/PdfSharp.System.dll",
+        "lib/net472/PdfSharp.System.pdb",
+        "lib/net472/PdfSharp.System.xml",
+        "lib/net472/PdfSharp.WPFonts.dll",
+        "lib/net472/PdfSharp.WPFonts.pdb",
+        "lib/net472/PdfSharp.WPFonts.xml",
+        "lib/net472/System.Buffers.dll",
+        "lib/net472/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net472/System.Memory.dll",
+        "lib/net472/System.Numerics.Vectors.dll",
+        "lib/net472/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net472/System.Threading.Tasks.Extensions.dll",
+        "lib/net472/System.ValueTuple.dll",
+        "lib/net472/de/MigraDoc.DocumentObjectModel.resources.dll",
+        "lib/net472/de/MigraDoc.Rendering-wpf.resources.dll",
+        "lib/net472/de/MigraDoc.RtfRendering-wpf.resources.dll",
+        "lib/net472/de/PdfSharp-wpf.resources.dll",
+        "lib/net472/de/PdfSharp.Charting-wpf.resources.dll",
+        "lib/net6.0-windows7.0/MigraDoc.DocumentObjectModel.dll",
+        "lib/net6.0-windows7.0/MigraDoc.DocumentObjectModel.pdb",
+        "lib/net6.0-windows7.0/MigraDoc.DocumentObjectModel.xml",
+        "lib/net6.0-windows7.0/MigraDoc.Rendering-wpf.dll",
+        "lib/net6.0-windows7.0/MigraDoc.Rendering-wpf.pdb",
+        "lib/net6.0-windows7.0/MigraDoc.Rendering-wpf.xml",
+        "lib/net6.0-windows7.0/MigraDoc.RtfRendering-wpf.dll",
+        "lib/net6.0-windows7.0/MigraDoc.RtfRendering-wpf.pdb",
+        "lib/net6.0-windows7.0/MigraDoc.RtfRendering-wpf.xml",
+        "lib/net6.0-windows7.0/PdfSharp-wpf.dll",
+        "lib/net6.0-windows7.0/PdfSharp-wpf.pdb",
+        "lib/net6.0-windows7.0/PdfSharp-wpf.xml",
+        "lib/net6.0-windows7.0/PdfSharp.Charting-wpf.dll",
+        "lib/net6.0-windows7.0/PdfSharp.Charting-wpf.pdb",
+        "lib/net6.0-windows7.0/PdfSharp.Charting-wpf.xml",
+        "lib/net6.0-windows7.0/PdfSharp.Quality-wpf.dll",
+        "lib/net6.0-windows7.0/PdfSharp.Quality-wpf.pdb",
+        "lib/net6.0-windows7.0/PdfSharp.Quality-wpf.xml",
+        "lib/net6.0-windows7.0/PdfSharp.Snippets-wpf.dll",
+        "lib/net6.0-windows7.0/PdfSharp.Snippets-wpf.pdb",
+        "lib/net6.0-windows7.0/PdfSharp.System.dll",
+        "lib/net6.0-windows7.0/PdfSharp.System.pdb",
+        "lib/net6.0-windows7.0/PdfSharp.System.xml",
+        "lib/net6.0-windows7.0/PdfSharp.WPFonts.dll",
+        "lib/net6.0-windows7.0/PdfSharp.WPFonts.pdb",
+        "lib/net6.0-windows7.0/PdfSharp.WPFonts.xml",
+        "lib/net6.0-windows7.0/de/MigraDoc.DocumentObjectModel.resources.dll",
+        "lib/net6.0-windows7.0/de/MigraDoc.Rendering-wpf.resources.dll",
+        "lib/net6.0-windows7.0/de/MigraDoc.RtfRendering-wpf.resources.dll",
+        "lib/net6.0-windows7.0/de/PdfSharp-wpf.resources.dll",
+        "lib/net6.0-windows7.0/de/PdfSharp.Charting-wpf.resources.dll",
+        "pdfsharp-migradoc-wpf.6.1.1.nupkg.sha512",
+        "pdfsharp-migradoc-wpf.nuspec"
+      ]
+    },
     "System.CodeDom/4.4.0": {
       "sha512": "2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA==",
       "type": "package",
@@ -3331,7 +3504,8 @@
       "Extended.Wpf.Toolkit >= 4.6.1",
       "Microsoft.EntityFrameworkCore.Proxies >= 7.0.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.20",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.20"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.20",
+      "PDFsharp-MigraDoc-WPF >= 6.1.1"
     ]
   },
   "packageFolders": {
@@ -3401,6 +3575,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.20, )"
+          },
+          "PDFsharp-MigraDoc-WPF": {
+            "target": "Package",
+            "version": "[6.1.1, )"
           }
         },
         "imports": [
@@ -3425,5 +3603,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
