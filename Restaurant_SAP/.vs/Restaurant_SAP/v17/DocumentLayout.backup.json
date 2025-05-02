@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "Restaurant_SAP\\ViewModels\\HistorialEconomicoViewModel.cs",
               "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\HistorialEconomicoViewModel.cs",
               "RelativeToolTip": "Restaurant_SAP\\ViewModels\\HistorialEconomicoViewModel.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAcwIoAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAKoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-22T15:25:23.559Z",
               "EditorCaption": ""
@@ -75,7 +75,8 @@
               "RelativeToolTip": "Restaurant_SAP\\ViewModels\\ViewModelLocator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T14:47:00.849Z"
+              "WhenOpened": "2025-01-22T14:47:00.849Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -86,7 +87,8 @@
               "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\MainWindow.xaml",
               "RelativeToolTip": "Restaurant_SAP\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-21T20:38:31.094Z"
+              "WhenOpened": "2025-01-21T20:38:31.094Z",
+              "EditorCaption": ""
             }
           ]
         }

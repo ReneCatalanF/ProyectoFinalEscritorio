@@ -1,11 +1,15 @@
 ﻿using Restaurant_SAP.Commands; // Asegúrate de que esta using esté correcta
 using Restaurant_SAP.DB;
 using Restaurant_SAP.Models;
+using Restaurant_SAP.Utilities; // Namespace para PdfGenerator
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
+using System.Windows;
 using System.Windows.Input;
+using Microsoft.Win32; // Para SaveFileDialog
 
 namespace Restaurant_SAP.ViewModels
 {
@@ -103,6 +107,7 @@ namespace Restaurant_SAP.ViewModels
         }
 
         public ICommand BuscarPedidosCommand { get; }
+        public ICommand GenerarPdfCommand { get; } // Nuevo comando
 
         protected virtual void OnPropertyChanged(string propertyName)
         {
@@ -115,7 +120,8 @@ namespace Restaurant_SAP.ViewModels
             Pedidos = new ObservableCollection<Pedido>();
             Menus = new ObservableCollection<Menu>();
             Mesas = new ObservableCollection<Mesa>();
-            BuscarPedidosCommand = new RelayCommand(BuscarPedidos); // Usando tu RelayCommand
+            BuscarPedidosCommand = new RelayCommand(BuscarPedidos);
+            GenerarPdfCommand = new RelayCommand(GenerarPdf); // Inicializar el nuevo comando
             CargarMenusYMesas();
         }
 
@@ -124,7 +130,7 @@ namespace Restaurant_SAP.ViewModels
             // Cargar Menús
             Menus.Clear();
             var menusDesdeDb = _context.Menus.ToList();
-            Menus.Add(new Menu { Id = 0, Nombre = "Todos" }); // Añadir "Todos" al principio
+            Menus.Add(new Menu { Id = 0, Nombre = "Todos" });
             foreach (var menu in menusDesdeDb)
             {
                 Menus.Add(menu);
@@ -134,7 +140,7 @@ namespace Restaurant_SAP.ViewModels
             // Cargar Mesas
             Mesas.Clear();
             var mesasDesdeDb = _context.Mesas.ToList();
-            Mesas.Add(new Mesa { Id = 0, Numero = 0 }); // Añadir "Todos" al principio (usamos 0.1 para evitar conflicto con mesas reales)
+            Mesas.Add(new Mesa { Id = 0, Numero = 0 });
             foreach (var mesa in mesasDesdeDb)
             {
                 Mesas.Add(mesa);
@@ -152,16 +158,16 @@ namespace Restaurant_SAP.ViewModels
             MenuSeleccionado = Menus.First();
         }
 
-        public void BuscarPedidos(object parameter) // El Execute de tu RelayCommand espera un objeto
+        public void BuscarPedidos(object parameter)
         {
             var filtroPedidos = _context.Pedidos.Where(p => p.Estado == EstadoPedido.Pagado);
 
-            if (MesaSeleccionada != null && (MesaSeleccionada as Mesa)?.Id != 0) // Filtrar si no es "Todos"
+            if (MesaSeleccionada != null && (MesaSeleccionada as Mesa)?.Id != 0)
             {
                 filtroPedidos = filtroPedidos.Where(p => p.MesaId == (MesaSeleccionada as Mesa).Id);
             }
 
-            if (MenuSeleccionado != null && (MenuSeleccionado as Menu)?.Id != 0) // Filtrar si no es "Todos"
+            if (MenuSeleccionado != null && (MenuSeleccionado as Menu)?.Id != 0)
             {
                 filtroPedidos = filtroPedidos.Where(p => p.MenuId == (MenuSeleccionado as Menu).Id);
             }
@@ -180,6 +186,38 @@ namespace Restaurant_SAP.ViewModels
             Total = Pedidos.Sum(pedido => pedido.Precio);
             OnPropertyChanged(nameof(Pedidos));
             OnPropertyChanged(nameof(Total));
+        }
+
+        private void GenerarPdf(object parameter)
+        {
+            if (Pedidos != null && Pedidos.Any())
+            {
+                byte[] pdfBytes = PdfGenerator.GeneratePedidosPdf(Pedidos.ToList());
+
+                SaveFileDialog dialog = new SaveFileDialog
+                {
+                    FileName = "HistorialPedidos.pdf",
+                    DefaultExt = ".pdf",
+                    Filter = "PDF files (.pdf)|*.pdf"
+                };
+
+                if (dialog.ShowDialog() == true)
+                {
+                    try
+                    {
+                        File.WriteAllBytes(dialog.FileName, pdfBytes);
+                        MessageBox.Show($"El PDF se ha guardado en: {dialog.FileName}", "Éxito", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error al guardar el PDF: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("No hay pedidos para generar el PDF.", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
     }
 }

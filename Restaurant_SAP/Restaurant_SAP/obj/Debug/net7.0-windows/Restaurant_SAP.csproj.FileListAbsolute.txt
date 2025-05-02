@@ -151,6 +151,15 @@ C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoF
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\Microsoft.Web.WebView2.WinForms.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\Microsoft.Web.WebView2.Wpf.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\MigraDoc.DocumentObjectModel.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\MigraDoc.Rendering-wpf.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\MigraDoc.RtfRendering-wpf.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\PdfSharp-wpf.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\PdfSharp.Charting-wpf.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\PdfSharp.Quality-wpf.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\PdfSharp.Snippets-wpf.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\PdfSharp.System.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\PdfSharp.WPFonts.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\System.Memory.Data.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
@@ -166,6 +175,11 @@ C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoF
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\de\MigraDoc.DocumentObjectModel.resources.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\de\MigraDoc.Rendering-wpf.resources.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\de\MigraDoc.RtfRendering-wpf.resources.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\de\PdfSharp-wpf.resources.dll
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\de\PdfSharp.Charting-wpf.resources.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll

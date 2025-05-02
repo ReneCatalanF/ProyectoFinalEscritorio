@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lv/0szDX6GM=",
+  "dgSpecHash": "KrkQrPeP1D4=",
   "success": true,
   "projectFilePath": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Restaurant_SAP.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,7 @@
     "C:\\Users\\REENE\\.nuget\\packages\\microsoft.web.webview2\\1.0.864.35\\microsoft.web.webview2.1.0.864.35.nupkg.sha512",
     "C:\\Users\\REENE\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\REENE\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\REENE\\.nuget\\packages\\pdfsharp-migradoc-wpf\\6.1.1\\pdfsharp-migradoc-wpf.6.1.1.nupkg.sha512",
     "C:\\Users\\REENE\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\REENE\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\REENE\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
