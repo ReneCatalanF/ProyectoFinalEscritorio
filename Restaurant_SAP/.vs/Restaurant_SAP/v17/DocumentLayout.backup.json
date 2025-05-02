@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\views\\historialeconomicoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\views\\historialeconomicoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\viewmodels\\historialeconomicoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\viewmodels\\historialeconomicoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\views\\historialeconomicoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\views\\historialeconomicoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\viewmodels\\viewmodellocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,20 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "HistorialEconomicoViewModel.cs",
               "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\HistorialEconomicoViewModel.cs",
               "RelativeDocumentMoniker": "Restaurant_SAP\\ViewModels\\HistorialEconomicoViewModel.cs",
               "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\HistorialEconomicoViewModel.cs",
               "RelativeToolTip": "Restaurant_SAP\\ViewModels\\HistorialEconomicoViewModel.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAcwKoAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAcwIoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-22T15:25:23.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HistorialEconomicoView.xaml",
               "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Views\\HistorialEconomicoView.xaml",
               "RelativeDocumentMoniker": "Restaurant_SAP\\Views\\HistorialEconomicoView.xaml",
