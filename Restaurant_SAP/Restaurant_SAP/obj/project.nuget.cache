@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "svE3fXemShU=",
+  "dgSpecHash": "lv/0szDX6GM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\Restaurant_SAP\\Restaurant_SAP\\Restaurant_SAP.csproj",
+  "projectFilePath": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Restaurant_SAP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\REENE\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\REENE\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
