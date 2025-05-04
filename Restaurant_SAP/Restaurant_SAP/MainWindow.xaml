@@ -8,7 +8,7 @@
         xmlns:viewsmodel="clr-namespace:Restaurant_SAP.ViewModels"
         xmlns:p="clr-namespace:Restaurant_SAP.Properties"
         mc:Ignorable="d"
-        Title="{x:Static p:Resources.WindowTitle}" Height="450" Width="800">
+        Title="{x:Static p:Resources.WindowTitle}" Height="700" Width="1000">
     <Window.Resources>
         <viewsmodel:ViewModelLocator x:Key="Locator"/>
     </Window.Resources>

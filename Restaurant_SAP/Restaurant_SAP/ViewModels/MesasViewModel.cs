@@ -82,7 +82,9 @@ namespace Restaurant_SAP.ViewModels
                         Id = SelectedMesa.Id,
                         Numero = SelectedMesa.Numero,
                         Descripcion = SelectedMesa.Descripcion,
-                        Estado = SelectedMesa.Estado
+                        Estado = SelectedMesa.Estado,
+                        CoordX = SelectedMesa.CoordX,
+                        CoordY = SelectedMesa.CoordY
                     };
                     IsEditing = true;
                     _logger.Debug($"Iniciando edición de la mesa ID: {SelectedMesa.Id}.");
@@ -272,6 +274,8 @@ namespace Restaurant_SAP.ViewModels
                         mesaOriginal.Numero = MesaEnEdicion.Numero;
                         mesaOriginal.Descripcion = MesaEnEdicion.Descripcion;
                         mesaOriginal.Estado = MesaEnEdicion.Estado;
+                        mesaOriginal.CoordX = MesaEnEdicion.CoordX;
+                        mesaOriginal.CoordY = MesaEnEdicion.CoordY;
 
                         _context.SaveChanges();
                         _logger.Info($"Cambios guardados en la mesa ID: {mesaOriginal.Id}.");

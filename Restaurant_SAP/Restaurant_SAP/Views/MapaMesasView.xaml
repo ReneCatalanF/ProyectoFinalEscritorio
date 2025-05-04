@@ -4,46 +4,73 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Restaurant_SAP.Views"
+             xmlns:converter="clr-namespace:Restaurant_SAP.Converters"
              xmlns:viewmodels="clr-namespace:Restaurant_SAP.ViewModels"
              xmlns:p="clr-namespace:Restaurant_SAP.Properties"
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
-
+    <UserControl.Resources>
+        <converter:GridToCanvasConverter x:Key="GridToCanvasConverter" />
+    </UserControl.Resources>
     <Grid>
         <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1" Padding="10" Margin="10">
-            <ItemsControl ItemsSource="{Binding Mesas}">
-                <ItemsControl.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <UniformGrid Columns="{Binding TamañoSeleccionado}" />
-                    </ItemsPanelTemplate>
-                </ItemsControl.ItemsPanel>
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <Border Margin="5" CornerRadius="5">
-                            <Border.Style>
-                                <Style TargetType="Border">
-                                    <Setter Property="Background" Value="LightGreen" />
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding Estado}" Value="Ocupada">
-                                            <Setter Property="Background" Value="LightCoral" />
-                                        </DataTrigger>
-                                        <DataTrigger Binding="{Binding Estado}" Value="Reservada">
-                                            <Setter Property="Background" Value="Orange" />
-                                        </DataTrigger>
-                                        <DataTrigger Binding="{Binding Estado}" Value="Pronto">
-                                            <Setter Property="Background" Value="Purple" />
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Border.Style>
-                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                                <TextBlock Text="{x:Static p:Resources.TextBlock_IconoMesa}" HorizontalAlignment="Center" />
-                                <TextBlock Text="{Binding Numero}" HorizontalAlignment="Center" FontWeight="Bold" />
-                            </StackPanel>
-                        </Border>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
+            <Canvas x:Name="MapaCanvas">
+                <ItemsControl ItemsSource="{Binding Mesas}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas IsItemsHost="True" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style TargetType="ContentPresenter">
+                            <Setter Property="Canvas.Left">
+                                <Setter.Value>
+                                    <MultiBinding Converter="{StaticResource GridToCanvasConverter}" ConverterParameter="WidthGrid=10">
+                                        <Binding Path="CoordX" />
+                                        <Binding ElementName="MapaCanvas" Path="ActualWidth" />
+                                    </MultiBinding>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="Canvas.Top">
+                                <Setter.Value>
+                                    <MultiBinding Converter="{StaticResource GridToCanvasConverter}" ConverterParameter="HeightGrid=10">
+                                        <Binding Path="CoordY" />
+                                        <Binding ElementName="MapaCanvas" Path="ActualHeight" />
+                                    </MultiBinding>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Canvas.Left="{Binding CoordX}" Canvas.Top="{Binding CoordY}" Margin="5" CornerRadius="5">
+                                <Border.Style>
+                                    <Style TargetType="Border">
+                                        <Setter Property="Background" Value="LightGreen" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Estado}" Value="Ocupada">
+                                                <Setter Property="Background" Value="LightCoral" />
+                                            </DataTrigger>
+                                            <DataTrigger Binding="{Binding Estado}" Value="Reservada">
+                                                <Setter Property="Background" Value="Orange" />
+                                            </DataTrigger>
+                                            <DataTrigger Binding="{Binding Estado}" Value="Pronto">
+                                                <Setter Property="Background" Value="Purple" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Border.Style>
+                                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <TextBlock Text="{x:Static p:Resources.TextBlock_IconoMesa}" HorizontalAlignment="Center" />
+                                    <TextBlock Text="{Binding Numero}" HorizontalAlignment="Center" FontWeight="Bold" />
+                                    <TextBlock Text="{Binding CoordX}" HorizontalAlignment="Center" FontWeight="Bold" />
+                                    <TextBlock Text="{Binding CoordY}" HorizontalAlignment="Center" FontWeight="Bold" />
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Canvas>
         </Border>
     </Grid>
 </UserControl>

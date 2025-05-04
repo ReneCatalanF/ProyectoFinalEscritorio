@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\views\\mapamesasview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\views\\mapamesasview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\viewmodels\\configuracionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\viewmodels\\configuracionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\converters\\gridtocanvasconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\converters\\gridtocanvasconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\viewmodels\\mapamesasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\viewmodels\\mapamesasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\viewmodels\\viewmodellocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\viewmodels\\viewmodellocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\models\\maparestaurante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\models\\maparestaurante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\models\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\models\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\viewmodels\\menusviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\viewmodels\\menusviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|c:\\users\\reene\\onedrive\\documentos\\master desarrollo\\progra escritorio\\proyectofinal\\proyectofinalescritorio\\restaurant_sap\\restaurant_sap\\views\\configuracionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1D3E3455-3555-4F68-AC0B-943E42027171}|Restaurant_SAP\\Restaurant_SAP.csproj|solutionrelative:restaurant_sap\\views\\configuracionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,31 +55,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\App.xaml",
-              "RelativeDocumentMoniker": "Restaurant_SAP\\App.xaml",
-              "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\App.xaml",
-              "RelativeToolTip": "Restaurant_SAP\\App.xaml",
+              "Title": "MapaMesasView.xaml",
+              "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Views\\MapaMesasView.xaml",
+              "RelativeDocumentMoniker": "Restaurant_SAP\\Views\\MapaMesasView.xaml",
+              "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Views\\MapaMesasView.xaml",
+              "RelativeToolTip": "Restaurant_SAP\\Views\\MapaMesasView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-04T11:20:32.649Z",
+              "WhenOpened": "2025-05-04T12:10:57.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ConfiguracionViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\ConfiguracionViewModel.cs",
-              "RelativeDocumentMoniker": "Restaurant_SAP\\ViewModels\\ConfiguracionViewModel.cs",
-              "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\ConfiguracionViewModel.cs",
-              "RelativeToolTip": "Restaurant_SAP\\ViewModels\\ConfiguracionViewModel.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAA3AAAAAAAAAA==",
+              "Title": "GridToCanvasConverter.cs",
+              "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Converters\\GridToCanvasConverter.cs",
+              "RelativeDocumentMoniker": "Restaurant_SAP\\Converters\\GridToCanvasConverter.cs",
+              "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Converters\\GridToCanvasConverter.cs",
+              "RelativeToolTip": "Restaurant_SAP\\Converters\\GridToCanvasConverter.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwB4AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T15:13:50.299Z",
+              "WhenOpened": "2025-05-04T12:49:05.81Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MapaMesasViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\MapaMesasViewModel.cs",
+              "RelativeDocumentMoniker": "Restaurant_SAP\\ViewModels\\MapaMesasViewModel.cs",
+              "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\MapaMesasViewModel.cs",
+              "RelativeToolTip": "Restaurant_SAP\\ViewModels\\MapaMesasViewModel.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAuwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:47:57.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Restaurant_SAP\\MainWindow.xaml",
@@ -91,53 +104,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RelayCommand.cs",
-              "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Commands\\RelayCommand.cs",
-              "RelativeDocumentMoniker": "Restaurant_SAP\\Commands\\RelayCommand.cs",
-              "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Commands\\RelayCommand.cs",
-              "RelativeToolTip": "Restaurant_SAP\\Commands\\RelayCommand.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAuwD8AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Mesa.cs",
+              "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Models\\Mesa.cs",
+              "RelativeDocumentMoniker": "Restaurant_SAP\\Models\\Mesa.cs",
+              "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Models\\Mesa.cs",
+              "RelativeToolTip": "Restaurant_SAP\\Models\\Mesa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T10:26:38.305Z",
+              "WhenOpened": "2025-05-04T12:11:17.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MenusViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\MenusViewModel.cs",
-              "RelativeDocumentMoniker": "Restaurant_SAP\\ViewModels\\MenusViewModel.cs",
-              "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\MenusViewModel.cs",
-              "RelativeToolTip": "Restaurant_SAP\\ViewModels\\MenusViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "MapaRestaurante.cs",
+              "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Models\\MapaRestaurante.cs",
+              "RelativeDocumentMoniker": "Restaurant_SAP\\Models\\MapaRestaurante.cs",
+              "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Models\\MapaRestaurante.cs",
+              "RelativeToolTip": "Restaurant_SAP\\Models\\MapaRestaurante.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T15:35:21.087Z",
+              "WhenOpened": "2025-05-04T12:15:15.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ConfiguracionView.xaml",
-              "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Views\\ConfiguracionView.xaml",
-              "RelativeDocumentMoniker": "Restaurant_SAP\\Views\\ConfiguracionView.xaml",
-              "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Views\\ConfiguracionView.xaml",
-              "RelativeToolTip": "Restaurant_SAP\\Views\\ConfiguracionView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-02T15:13:35.32Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ViewModelLocator.cs",
-              "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\ViewModelLocator.cs",
-              "RelativeDocumentMoniker": "Restaurant_SAP\\ViewModels\\ViewModelLocator.cs",
-              "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\ViewModelLocator.cs",
-              "RelativeToolTip": "Restaurant_SAP\\ViewModels\\ViewModelLocator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Title": "MenusViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\MenusViewModel.cs",
+              "RelativeDocumentMoniker": "Restaurant_SAP\\ViewModels\\MenusViewModel.cs",
+              "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\MenusViewModel.cs",
+              "RelativeToolTip": "Restaurant_SAP\\ViewModels\\MenusViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T13:38:18.872Z",
+              "WhenOpened": "2025-05-04T11:45:17.37Z",
               "EditorCaption": ""
             }
           ]

@@ -24,6 +24,8 @@
                         <TextBlock Text="{Binding Numero}" FontWeight="Bold" Margin="0,0,5,0" ToolTip="{x:Static p:Resources.ListBox_Mesas_Numero}"/>
                         <TextBlock Text="{Binding Descripcion}" Margin="0,0,5,0" ToolTip="{x:Static p:Resources.ListBox_Mesas_Descripcion}"/>
                         <TextBlock Text="{Binding Estado}" ToolTip="{x:Static p:Resources.ListBox_Mesas_Estado}"/>
+                        <TextBlock Text="{Binding CoordX, StringFormat='(X:{0}'}" Margin="5,0,0,0" ToolTip="Coordenada X de la mesa para el mapa"/>
+                        <TextBlock Text="{Binding CoordY, StringFormat=' Y:{0})'}" ToolTip="Coordenada Y de la mesa para el mapa"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
@@ -36,6 +38,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -53,7 +56,13 @@
                           ItemsSource="{Binding DataContext.EstadosMesa, RelativeSource={RelativeSource AncestorType=UserControl}}"
                           SelectedItem="{Binding Estado, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
 
-                <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Coordenada X:" Margin="5"/>
+                <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding CoordX, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="Coordenada Y:" Margin="5"/>
+                <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding CoordY, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+
+                <StackPanel Grid.Row="5" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
                     <Button Content="{x:Static p:Resources.Button_GuardarMesa}" Command="{Binding DataContext.GuardarCambiosCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5" />
                     <Button Content="{x:Static p:Resources.Button_CancelarMesa}" Command="{Binding DataContext.CancelarEdicionCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5"/>
                     <Button Content="{x:Static p:Resources.Button_EliminarMesa}" Command="{Binding DataContext.EliminarMesaCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5"/>
@@ -71,6 +80,8 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
                 <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_NumeroMesa}" Margin="5"/>
@@ -79,7 +90,13 @@
                 <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_DescripcionMesa}" Margin="5"/>
                 <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Descripcion, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
 
-                <Button Grid.Row="2" Grid.ColumnSpan="2" Content="{x:Static p:Resources.Button_AgregarNuevaMesa}"
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Coordenada X:" Margin="5"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding CoordX, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Coordenada Y:" Margin="5"/>
+                <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding CoordY, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+
+                <Button Grid.Row="4" Grid.ColumnSpan="2" Content="{x:Static p:Resources.Button_AgregarNuevaMesa}"
                         Command="{Binding DataContext.AgregarMesaCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5"/>
             </Grid>
         </GroupBox>

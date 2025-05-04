@@ -57,6 +57,12 @@ namespace Restaurant_SAP.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("CoordX")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("CoordY")
+                        .HasColumnType("int");
+
                     b.Property<string>("Descripcion")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

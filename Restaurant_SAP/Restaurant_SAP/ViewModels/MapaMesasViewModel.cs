@@ -8,13 +8,13 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NLog;
 
 namespace Restaurant_SAP.ViewModels
 {
-
-
     public class MapaMesasViewModel : INotifyPropertyChanged
     {
+        private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
         private ObservableCollection<Mesa> _mesas;
         public ObservableCollection<Mesa> Mesas
         {
@@ -26,21 +26,10 @@ namespace Restaurant_SAP.ViewModels
 
                 _mesas = value;
                 OnPropertyChanged(nameof(Mesas));
+                _logger.Debug($"Colección de mesas para el mapa actualizada. Nuevo conteo: {_mesas?.Count}.");
 
                 if (_mesas != null)
                     _mesas.CollectionChanged += Mesas_CollectionChanged;
-            }
-        }
-
-        public ObservableCollection<int> TamañosMapa { get; } = new ObservableCollection<int> { 3, 4, 5 };
-        private int _tamañoSeleccionado = 4;
-        public int TamañoSeleccionado
-        {
-            get => _tamañoSeleccionado;
-            set
-            {
-                _tamañoSeleccionado = value;
-                OnPropertyChanged(nameof(TamañoSeleccionado));
             }
         }
 
@@ -52,16 +41,18 @@ namespace Restaurant_SAP.ViewModels
             {
                 _cantidadMesas = value;
                 OnPropertyChanged(nameof(CantidadMesas));
+                _logger.Debug($"Cantidad de mesas en el mapa: {_cantidadMesas}.");
             }
         }
 
         public MapaMesasViewModel(MesasViewModel mesasViewModel)
         {
-            
+            _logger.Trace("Constructor MapaMesasViewModel llamado.");
             Mesas = mesasViewModel.Mesas;
             CantidadMesas = Mesas.Count;
 
             mesasViewModel.PropertyChanged += MesasViewModel_PropertyChanged;
+            _logger.Debug("Suscrito al evento PropertyChanged de MesasViewModel.");
         }
 
         private void MesasViewModel_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -70,6 +61,7 @@ namespace Restaurant_SAP.ViewModels
             {
                 OnPropertyChanged(nameof(Mesas));
                 OnPropertyChanged(nameof(CantidadMesas));
+                _logger.Debug("La propiedad Mesas ha cambiado en MesasViewModel. Notificando cambios.");
             }
         }
 
@@ -77,6 +69,7 @@ namespace Restaurant_SAP.ViewModels
         {
             OnPropertyChanged(nameof(Mesas));
             OnPropertyChanged(nameof(CantidadMesas));
+            _logger.Debug($"La colección de mesas del mapa ha cambiado. Acción: {e.Action}.");
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -85,11 +78,5 @@ namespace Restaurant_SAP.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-
-
-
-
     }
-
 }

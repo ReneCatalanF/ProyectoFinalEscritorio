@@ -15,6 +15,8 @@ namespace Restaurant_SAP.Models
         public int Numero { get; set; }
         public string Descripcion { get; set; }
         public EstadoMesa Estado { get; set; }
+        public int? CoordX { get; set; } // Propiedad para la coordenada X
+        public int? CoordY { get; set; } // Propiedad para la coordenada Y
         public virtual ICollection<Pedido> Pedidos { get; set; } = new List<Pedido>();
         public virtual ICollection<Reserva> Reservas { get; set; } = new List<Reserva>();
 
