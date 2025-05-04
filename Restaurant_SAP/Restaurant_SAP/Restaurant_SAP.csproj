@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\dinner-table.png" />
     <None Remove="NLog.config" />
   </ItemGroup>
 
@@ -16,6 +17,10 @@
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\dinner-table.png" />
   </ItemGroup>
 
   <ItemGroup>

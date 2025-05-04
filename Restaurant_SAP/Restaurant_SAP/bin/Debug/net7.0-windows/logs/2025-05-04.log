@@ -2512,3 +2512,348 @@
 2025-05-04 16:02:04.4142 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanGuardarCambios llamado. Retornando: False.
 2025-05-04 16:02:04.4142 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanEliminarMenu llamado. Retornando: False.
 2025-05-04 16:02:04.4272 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanAgregarMenu llamado. Retornando: true.
+2025-05-04 16:06:55.3218 INFO Restaurant_SAP.App - NLog inicializado.
+2025-05-04 16:06:55.5543 INFO Restaurant_SAP.App - No se encontró idioma guardado. Se usará el idioma por defecto (es-ES).
+2025-05-04 16:06:56.1493 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Constructor MesasViewModel llamado.
+2025-05-04 16:06:56.1493 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha sido actualizada. Nuevo conteo: 0
+2025-05-04 16:06:56.1602 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Reset.
+2025-05-04 16:06:56.1602 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Cargando mesas desde la base de datos...
+2025-05-04 16:06:57.7483 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:06:57.7483 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:06:57.7483 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:06:57.7483 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:06:57.7483 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:06:57.7483 INFO Restaurant_SAP.ViewModels.MesasViewModel - Se cargaron 5 mesas desde la base de datos.
+2025-05-04 16:06:57.7483 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método IniciarTimer llamado.
+2025-05-04 16:06:57.7554 INFO Restaurant_SAP.ViewModels.MesasViewModel - Timer para verificar reservas iniciado con intervalo de 1 minuto.
+2025-05-04 16:06:57.7554 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - MesasViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:06:57.7554 TRACE Restaurant_SAP.ViewModels.MenusViewModel - Constructor MenusViewModel llamado.
+2025-05-04 16:06:57.7554 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha sido actualizada. Nuevo conteo: 0
+2025-05-04 16:06:57.7554 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Reset.
+2025-05-04 16:06:57.7554 TRACE Restaurant_SAP.ViewModels.MenusViewModel - Cargando menús desde la base de datos...
+2025-05-04 16:06:57.8046 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:06:57.8046 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:06:57.8046 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:06:57.8046 INFO Restaurant_SAP.ViewModels.MenusViewModel - Se cargaron 3 menús desde la base de datos.
+2025-05-04 16:06:57.8046 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - MenusViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:06:57.8046 TRACE Restaurant_SAP.ViewModels.MapaMesasViewModel - Constructor MapaMesasViewModel llamado.
+2025-05-04 16:06:57.8046 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Colección de mesas para el mapa actualizada. Nuevo conteo: 5.
+2025-05-04 16:06:57.8046 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Cantidad de mesas en el mapa: 5.
+2025-05-04 16:06:57.8046 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Suscrito al evento PropertyChanged de MesasViewModel.
+2025-05-04 16:06:57.8046 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - Constructor ReservasViewModel llamado.
+2025-05-04 16:06:57.8046 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - Reserva en edición cambiada. Nueva reserva: 0
+2025-05-04 16:06:57.8046 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - Reservas actualizadas. Nuevo conteo: 0
+2025-05-04 16:06:57.8046 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - ReservasViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext, MesasViewModel: Restaurant_SAP.ViewModels.MesasViewModel.
+2025-05-04 16:06:57.8185 TRACE Restaurant_SAP.ViewModels.ConfiguracionViewModel - Constructor ConfiguracionViewModel llamado.
+2025-05-04 16:06:57.8185 DEBUG Restaurant_SAP.ViewModels.ConfiguracionViewModel - Idioma guardado al inicio: ''.
+2025-05-04 16:06:57.8185 INFO Restaurant_SAP.ViewModels.ConfiguracionViewModel - Idioma seleccionado al inicio: ''.
+2025-05-04 16:06:57.8185 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Constructor HistorialEconomicoViewModel llamado.
+2025-05-04 16:06:57.8185 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de pedidos para el historial actualizada. Nuevo conteo: 0.
+2025-05-04 16:06:57.8185 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de menús cargada para el filtro. Conteo: 0.
+2025-05-04 16:06:57.8185 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de mesas cargada para el filtro. Conteo: 0.
+2025-05-04 16:06:57.8185 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Cargando menús y mesas para los filtros.
+2025-05-04 16:06:57.8185 INFO Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Se cargaron 3 menús para el filtro.
+2025-05-04 16:06:57.8185 INFO Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Se cargaron 5 mesas para el filtro.
+2025-05-04 16:06:57.8336 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Total económico actualizado: 0.
+2025-05-04 16:06:57.8336 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Pedidos y total inicializados/limpiados.
+2025-05-04 16:06:57.8336 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Mesa seleccionada para el filtro: Todos.
+2025-05-04 16:06:57.8336 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Menú seleccionado para el filtro: Todos.
+2025-05-04 16:06:57.8336 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Filtros de mesa y menú establecidos en 'Todos' inicialmente.
+2025-05-04 16:06:57.8336 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Carga de menús y mesas completada.
+2025-05-04 16:06:57.8336 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - HistorialEconomicoViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:06:58.4454 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanGuardarCambios llamado. Retornando: False.
+2025-05-04 16:06:58.4454 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanEliminarMesa llamado. Retornando: False.
+2025-05-04 16:06:58.4454 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanAgregarMesa llamado. Retornando: true.
+2025-05-04 16:06:58.4572 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanAgregarReserva llamado. Retornando: true.
+2025-05-04 16:06:58.4572 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanGuardarCambiosReserva llamado. Retornando: True.
+2025-05-04 16:06:58.4572 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanEliminarReserva llamado. Retornando: True.
+2025-05-04 16:06:58.4572 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanGuardarCambios llamado. Retornando: False.
+2025-05-04 16:06:58.4572 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanEliminarMenu llamado. Retornando: False.
+2025-05-04 16:06:58.4572 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanAgregarMenu llamado. Retornando: true.
+2025-05-04 16:07:05.8815 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Cargando menús y mesas para los filtros.
+2025-05-04 16:07:05.8815 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Menú seleccionado para el filtro: Todos.
+2025-05-04 16:07:05.8965 INFO Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Se cargaron 3 menús para el filtro.
+2025-05-04 16:07:05.8965 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Mesa seleccionada para el filtro: Todos.
+2025-05-04 16:07:05.8965 INFO Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Se cargaron 5 mesas para el filtro.
+2025-05-04 16:07:05.8965 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Total económico actualizado: 0.
+2025-05-04 16:07:05.9128 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Pedidos y total inicializados/limpiados.
+2025-05-04 16:07:05.9128 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Mesa seleccionada para el filtro: Todos.
+2025-05-04 16:07:05.9128 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Menú seleccionado para el filtro: Todos.
+2025-05-04 16:07:05.9128 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Filtros de mesa y menú establecidos en 'Todos' inicialmente.
+2025-05-04 16:07:05.9128 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Carga de menús y mesas completada.
+2025-05-04 16:07:57.7803 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas llamado por el timer.
+2025-05-04 16:07:57.7862 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Verificando reservas activas a las: 4/5/2025 16:07:57.
+2025-05-04 16:07:58.0972 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Se encontraron 0 reservas activas.
+2025-05-04 16:07:58.0972 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas completado.
+2025-05-04 16:08:58.1485 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas llamado por el timer.
+2025-05-04 16:08:58.1485 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Verificando reservas activas a las: 4/5/2025 16:08:58.
+2025-05-04 16:08:58.2079 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Se encontraron 0 reservas activas.
+2025-05-04 16:08:58.2079 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas completado.
+2025-05-04 16:09:58.2702 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas llamado por el timer.
+2025-05-04 16:09:58.2702 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Verificando reservas activas a las: 4/5/2025 16:09:58.
+2025-05-04 16:09:58.3188 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Se encontraron 0 reservas activas.
+2025-05-04 16:09:58.3188 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas completado.
+2025-05-04 16:10:58.3354 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas llamado por el timer.
+2025-05-04 16:10:58.3354 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Verificando reservas activas a las: 4/5/2025 16:10:58.
+2025-05-04 16:10:58.3484 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Se encontraron 0 reservas activas.
+2025-05-04 16:10:58.3484 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas completado.
+2025-05-04 16:11:58.4508 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas llamado por el timer.
+2025-05-04 16:11:58.4508 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Verificando reservas activas a las: 4/5/2025 16:11:58.
+2025-05-04 16:11:58.4663 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Se encontraron 0 reservas activas.
+2025-05-04 16:11:58.4663 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas completado.
+2025-05-04 16:12:58.4915 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas llamado por el timer.
+2025-05-04 16:12:58.4915 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Verificando reservas activas a las: 4/5/2025 16:12:58.
+2025-05-04 16:12:58.4915 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Se encontraron 0 reservas activas.
+2025-05-04 16:12:58.5061 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas completado.
+2025-05-04 16:13:58.5849 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas llamado por el timer.
+2025-05-04 16:13:58.5849 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Verificando reservas activas a las: 4/5/2025 16:13:58.
+2025-05-04 16:13:58.5849 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Se encontraron 0 reservas activas.
+2025-05-04 16:13:58.6006 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas completado.
+2025-05-04 16:14:58.6029 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas llamado por el timer.
+2025-05-04 16:14:58.6029 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Verificando reservas activas a las: 4/5/2025 16:14:58.
+2025-05-04 16:14:58.6132 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Se encontraron 0 reservas activas.
+2025-05-04 16:14:58.6132 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas completado.
+2025-05-04 16:15:58.6196 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas llamado por el timer.
+2025-05-04 16:15:58.6196 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Verificando reservas activas a las: 4/5/2025 16:15:58.
+2025-05-04 16:15:58.6196 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Se encontraron 0 reservas activas.
+2025-05-04 16:15:58.6196 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas completado.
+2025-05-04 16:16:58.6651 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas llamado por el timer.
+2025-05-04 16:16:58.6651 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Verificando reservas activas a las: 4/5/2025 16:16:58.
+2025-05-04 16:16:58.6798 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Se encontraron 0 reservas activas.
+2025-05-04 16:16:58.6798 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas completado.
+2025-05-04 16:26:52.2860 INFO Restaurant_SAP.App - NLog inicializado.
+2025-05-04 16:26:52.3932 INFO Restaurant_SAP.App - No se encontró idioma guardado. Se usará el idioma por defecto (es-ES).
+2025-05-04 16:26:52.7114 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Constructor MesasViewModel llamado.
+2025-05-04 16:26:52.7114 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha sido actualizada. Nuevo conteo: 0
+2025-05-04 16:26:52.7114 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Reset.
+2025-05-04 16:26:52.7114 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Cargando mesas desde la base de datos...
+2025-05-04 16:26:53.8292 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:26:53.8292 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:26:53.8292 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:26:53.8314 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:26:53.8314 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:26:53.8314 INFO Restaurant_SAP.ViewModels.MesasViewModel - Se cargaron 5 mesas desde la base de datos.
+2025-05-04 16:26:53.8314 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método IniciarTimer llamado.
+2025-05-04 16:26:53.8314 INFO Restaurant_SAP.ViewModels.MesasViewModel - Timer para verificar reservas iniciado con intervalo de 1 minuto.
+2025-05-04 16:26:53.8314 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - MesasViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:26:53.8314 TRACE Restaurant_SAP.ViewModels.MenusViewModel - Constructor MenusViewModel llamado.
+2025-05-04 16:26:53.8314 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha sido actualizada. Nuevo conteo: 0
+2025-05-04 16:26:53.8314 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Reset.
+2025-05-04 16:26:53.8314 TRACE Restaurant_SAP.ViewModels.MenusViewModel - Cargando menús desde la base de datos...
+2025-05-04 16:26:53.8962 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:26:53.8962 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:26:53.8962 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:26:53.8962 INFO Restaurant_SAP.ViewModels.MenusViewModel - Se cargaron 3 menús desde la base de datos.
+2025-05-04 16:26:53.8962 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - MenusViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:26:53.8962 TRACE Restaurant_SAP.ViewModels.MapaMesasViewModel - Constructor MapaMesasViewModel llamado.
+2025-05-04 16:26:53.8962 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Colección de mesas para el mapa actualizada. Nuevo conteo: 5.
+2025-05-04 16:26:53.8962 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Cantidad de mesas en el mapa: 5.
+2025-05-04 16:26:53.8962 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Suscrito al evento PropertyChanged de MesasViewModel.
+2025-05-04 16:26:53.8962 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - Constructor ReservasViewModel llamado.
+2025-05-04 16:26:53.8962 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - Reserva en edición cambiada. Nueva reserva: 0
+2025-05-04 16:26:53.8962 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - Reservas actualizadas. Nuevo conteo: 0
+2025-05-04 16:26:53.8962 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - ReservasViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext, MesasViewModel: Restaurant_SAP.ViewModels.MesasViewModel.
+2025-05-04 16:26:53.8962 TRACE Restaurant_SAP.ViewModels.ConfiguracionViewModel - Constructor ConfiguracionViewModel llamado.
+2025-05-04 16:26:53.9106 DEBUG Restaurant_SAP.ViewModels.ConfiguracionViewModel - Idioma guardado al inicio: ''.
+2025-05-04 16:26:53.9106 INFO Restaurant_SAP.ViewModels.ConfiguracionViewModel - Idioma seleccionado al inicio: ''.
+2025-05-04 16:26:53.9106 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Constructor HistorialEconomicoViewModel llamado.
+2025-05-04 16:26:53.9106 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de pedidos para el historial actualizada. Nuevo conteo: 0.
+2025-05-04 16:26:53.9106 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de menús cargada para el filtro. Conteo: 0.
+2025-05-04 16:26:53.9106 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de mesas cargada para el filtro. Conteo: 0.
+2025-05-04 16:26:53.9106 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Cargando menús y mesas para los filtros.
+2025-05-04 16:26:53.9106 INFO Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Se cargaron 3 menús para el filtro.
+2025-05-04 16:26:53.9106 INFO Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Se cargaron 5 mesas para el filtro.
+2025-05-04 16:26:53.9106 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Total económico actualizado: 0.
+2025-05-04 16:26:53.9106 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Pedidos y total inicializados/limpiados.
+2025-05-04 16:26:53.9106 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Mesa seleccionada para el filtro: Todos.
+2025-05-04 16:26:53.9106 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Menú seleccionado para el filtro: Todos.
+2025-05-04 16:26:53.9106 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Filtros de mesa y menú establecidos en 'Todos' inicialmente.
+2025-05-04 16:26:53.9106 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Carga de menús y mesas completada.
+2025-05-04 16:26:53.9106 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - HistorialEconomicoViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:26:54.4846 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanGuardarCambios llamado. Retornando: False.
+2025-05-04 16:26:54.4846 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanEliminarMesa llamado. Retornando: False.
+2025-05-04 16:26:54.4913 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanAgregarMesa llamado. Retornando: true.
+2025-05-04 16:26:54.4913 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanAgregarReserva llamado. Retornando: true.
+2025-05-04 16:26:54.4913 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanGuardarCambiosReserva llamado. Retornando: True.
+2025-05-04 16:26:54.4913 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanEliminarReserva llamado. Retornando: True.
+2025-05-04 16:26:54.4913 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanGuardarCambios llamado. Retornando: False.
+2025-05-04 16:26:54.4913 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanEliminarMenu llamado. Retornando: False.
+2025-05-04 16:26:54.4913 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanAgregarMenu llamado. Retornando: true.
+2025-05-04 16:27:53.8345 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas llamado por el timer.
+2025-05-04 16:27:53.8345 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Verificando reservas activas a las: 4/5/2025 16:27:53.
+2025-05-04 16:27:54.0027 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - Se encontraron 0 reservas activas.
+2025-05-04 16:27:54.0036 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método VerificarReservas completado.
+2025-05-04 16:28:24.6651 INFO Restaurant_SAP.App - NLog inicializado.
+2025-05-04 16:28:24.7471 INFO Restaurant_SAP.App - No se encontró idioma guardado. Se usará el idioma por defecto (es-ES).
+2025-05-04 16:28:25.0766 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Constructor MesasViewModel llamado.
+2025-05-04 16:28:25.0766 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha sido actualizada. Nuevo conteo: 0
+2025-05-04 16:28:25.0837 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Reset.
+2025-05-04 16:28:25.0837 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Cargando mesas desde la base de datos...
+2025-05-04 16:28:26.1295 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:28:26.1295 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:28:26.1295 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:28:26.1295 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:28:26.1295 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:28:26.1295 INFO Restaurant_SAP.ViewModels.MesasViewModel - Se cargaron 5 mesas desde la base de datos.
+2025-05-04 16:28:26.1295 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método IniciarTimer llamado.
+2025-05-04 16:28:26.1295 INFO Restaurant_SAP.ViewModels.MesasViewModel - Timer para verificar reservas iniciado con intervalo de 1 minuto.
+2025-05-04 16:28:26.1295 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - MesasViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:28:26.1295 TRACE Restaurant_SAP.ViewModels.MenusViewModel - Constructor MenusViewModel llamado.
+2025-05-04 16:28:26.1295 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha sido actualizada. Nuevo conteo: 0
+2025-05-04 16:28:26.1295 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Reset.
+2025-05-04 16:28:26.1295 TRACE Restaurant_SAP.ViewModels.MenusViewModel - Cargando menús desde la base de datos...
+2025-05-04 16:28:26.1842 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:28:26.1842 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:28:26.1842 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:28:26.1842 INFO Restaurant_SAP.ViewModels.MenusViewModel - Se cargaron 3 menús desde la base de datos.
+2025-05-04 16:28:26.1842 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - MenusViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:28:26.1928 TRACE Restaurant_SAP.ViewModels.MapaMesasViewModel - Constructor MapaMesasViewModel llamado.
+2025-05-04 16:28:26.1928 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Colección de mesas para el mapa actualizada. Nuevo conteo: 5.
+2025-05-04 16:28:26.1928 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Cantidad de mesas en el mapa: 5.
+2025-05-04 16:28:26.1928 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Suscrito al evento PropertyChanged de MesasViewModel.
+2025-05-04 16:28:26.1928 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - Constructor ReservasViewModel llamado.
+2025-05-04 16:28:26.1928 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - Reserva en edición cambiada. Nueva reserva: 0
+2025-05-04 16:28:26.1928 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - Reservas actualizadas. Nuevo conteo: 0
+2025-05-04 16:28:26.1928 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - ReservasViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext, MesasViewModel: Restaurant_SAP.ViewModels.MesasViewModel.
+2025-05-04 16:28:26.2095 TRACE Restaurant_SAP.ViewModels.ConfiguracionViewModel - Constructor ConfiguracionViewModel llamado.
+2025-05-04 16:28:26.2095 DEBUG Restaurant_SAP.ViewModels.ConfiguracionViewModel - Idioma guardado al inicio: ''.
+2025-05-04 16:28:26.2095 INFO Restaurant_SAP.ViewModels.ConfiguracionViewModel - Idioma seleccionado al inicio: ''.
+2025-05-04 16:28:26.2095 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Constructor HistorialEconomicoViewModel llamado.
+2025-05-04 16:28:26.2095 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de pedidos para el historial actualizada. Nuevo conteo: 0.
+2025-05-04 16:28:26.2095 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de menús cargada para el filtro. Conteo: 0.
+2025-05-04 16:28:26.2095 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de mesas cargada para el filtro. Conteo: 0.
+2025-05-04 16:28:26.2095 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Cargando menús y mesas para los filtros.
+2025-05-04 16:28:26.2246 INFO Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Se cargaron 3 menús para el filtro.
+2025-05-04 16:28:26.2246 INFO Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Se cargaron 5 mesas para el filtro.
+2025-05-04 16:28:26.2246 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Total económico actualizado: 0.
+2025-05-04 16:28:26.2246 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Pedidos y total inicializados/limpiados.
+2025-05-04 16:28:26.2246 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Mesa seleccionada para el filtro: Todos.
+2025-05-04 16:28:26.2246 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Menú seleccionado para el filtro: Todos.
+2025-05-04 16:28:26.2246 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Filtros de mesa y menú establecidos en 'Todos' inicialmente.
+2025-05-04 16:28:26.2246 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Carga de menús y mesas completada.
+2025-05-04 16:28:26.2246 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - HistorialEconomicoViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:28:26.8701 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanGuardarCambios llamado. Retornando: False.
+2025-05-04 16:28:26.8701 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanEliminarMesa llamado. Retornando: False.
+2025-05-04 16:28:26.8793 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanAgregarMesa llamado. Retornando: true.
+2025-05-04 16:28:26.8793 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanAgregarReserva llamado. Retornando: true.
+2025-05-04 16:28:26.8793 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanGuardarCambiosReserva llamado. Retornando: True.
+2025-05-04 16:28:26.8793 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanEliminarReserva llamado. Retornando: True.
+2025-05-04 16:28:26.8793 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanGuardarCambios llamado. Retornando: False.
+2025-05-04 16:28:26.8793 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanEliminarMenu llamado. Retornando: False.
+2025-05-04 16:28:26.8793 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanAgregarMenu llamado. Retornando: true.
+2025-05-04 16:28:51.1460 INFO Restaurant_SAP.App - NLog inicializado.
+2025-05-04 16:28:51.2301 INFO Restaurant_SAP.App - No se encontró idioma guardado. Se usará el idioma por defecto (es-ES).
+2025-05-04 16:28:51.5650 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Constructor MesasViewModel llamado.
+2025-05-04 16:28:51.5670 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha sido actualizada. Nuevo conteo: 0
+2025-05-04 16:28:51.5670 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Reset.
+2025-05-04 16:28:51.5670 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Cargando mesas desde la base de datos...
+2025-05-04 16:28:52.6969 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:28:52.6969 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:28:52.6969 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:28:52.6969 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:28:52.6969 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:28:52.6969 INFO Restaurant_SAP.ViewModels.MesasViewModel - Se cargaron 5 mesas desde la base de datos.
+2025-05-04 16:28:52.6969 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método IniciarTimer llamado.
+2025-05-04 16:28:52.6969 INFO Restaurant_SAP.ViewModels.MesasViewModel - Timer para verificar reservas iniciado con intervalo de 1 minuto.
+2025-05-04 16:28:52.6969 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - MesasViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:28:52.6969 TRACE Restaurant_SAP.ViewModels.MenusViewModel - Constructor MenusViewModel llamado.
+2025-05-04 16:28:52.6969 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha sido actualizada. Nuevo conteo: 0
+2025-05-04 16:28:52.7070 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Reset.
+2025-05-04 16:28:52.7070 TRACE Restaurant_SAP.ViewModels.MenusViewModel - Cargando menús desde la base de datos...
+2025-05-04 16:28:52.7430 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:28:52.7430 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:28:52.7430 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:28:52.7430 INFO Restaurant_SAP.ViewModels.MenusViewModel - Se cargaron 3 menús desde la base de datos.
+2025-05-04 16:28:52.7430 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - MenusViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:28:52.7430 TRACE Restaurant_SAP.ViewModels.MapaMesasViewModel - Constructor MapaMesasViewModel llamado.
+2025-05-04 16:28:52.7430 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Colección de mesas para el mapa actualizada. Nuevo conteo: 5.
+2025-05-04 16:28:52.7430 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Cantidad de mesas en el mapa: 5.
+2025-05-04 16:28:52.7430 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Suscrito al evento PropertyChanged de MesasViewModel.
+2025-05-04 16:28:52.7430 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - Constructor ReservasViewModel llamado.
+2025-05-04 16:28:52.7544 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - Reserva en edición cambiada. Nueva reserva: 0
+2025-05-04 16:28:52.7544 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - Reservas actualizadas. Nuevo conteo: 0
+2025-05-04 16:28:52.7544 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - ReservasViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext, MesasViewModel: Restaurant_SAP.ViewModels.MesasViewModel.
+2025-05-04 16:28:52.7544 TRACE Restaurant_SAP.ViewModels.ConfiguracionViewModel - Constructor ConfiguracionViewModel llamado.
+2025-05-04 16:28:52.7544 DEBUG Restaurant_SAP.ViewModels.ConfiguracionViewModel - Idioma guardado al inicio: ''.
+2025-05-04 16:28:52.7544 INFO Restaurant_SAP.ViewModels.ConfiguracionViewModel - Idioma seleccionado al inicio: ''.
+2025-05-04 16:28:52.7544 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Constructor HistorialEconomicoViewModel llamado.
+2025-05-04 16:28:52.7544 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de pedidos para el historial actualizada. Nuevo conteo: 0.
+2025-05-04 16:28:52.7706 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de menús cargada para el filtro. Conteo: 0.
+2025-05-04 16:28:52.7706 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de mesas cargada para el filtro. Conteo: 0.
+2025-05-04 16:28:52.7706 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Cargando menús y mesas para los filtros.
+2025-05-04 16:28:52.7706 INFO Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Se cargaron 3 menús para el filtro.
+2025-05-04 16:28:52.7706 INFO Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Se cargaron 5 mesas para el filtro.
+2025-05-04 16:28:52.7706 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Total económico actualizado: 0.
+2025-05-04 16:28:52.7706 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Pedidos y total inicializados/limpiados.
+2025-05-04 16:28:52.7706 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Mesa seleccionada para el filtro: Todos.
+2025-05-04 16:28:52.7706 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Menú seleccionado para el filtro: Todos.
+2025-05-04 16:28:52.7706 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Filtros de mesa y menú establecidos en 'Todos' inicialmente.
+2025-05-04 16:28:52.7706 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Carga de menús y mesas completada.
+2025-05-04 16:28:52.7706 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - HistorialEconomicoViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:28:53.3438 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanGuardarCambios llamado. Retornando: False.
+2025-05-04 16:28:53.3438 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanEliminarMesa llamado. Retornando: False.
+2025-05-04 16:28:53.3538 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanAgregarMesa llamado. Retornando: true.
+2025-05-04 16:28:53.3538 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanAgregarReserva llamado. Retornando: true.
+2025-05-04 16:28:53.3538 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanGuardarCambiosReserva llamado. Retornando: True.
+2025-05-04 16:28:53.3538 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanEliminarReserva llamado. Retornando: True.
+2025-05-04 16:28:53.3636 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanGuardarCambios llamado. Retornando: False.
+2025-05-04 16:28:53.3636 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanEliminarMenu llamado. Retornando: False.
+2025-05-04 16:28:53.3636 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanAgregarMenu llamado. Retornando: true.
+2025-05-04 16:29:26.6186 INFO Restaurant_SAP.App - NLog inicializado.
+2025-05-04 16:29:26.7009 INFO Restaurant_SAP.App - No se encontró idioma guardado. Se usará el idioma por defecto (es-ES).
+2025-05-04 16:29:27.0356 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Constructor MesasViewModel llamado.
+2025-05-04 16:29:27.0356 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha sido actualizada. Nuevo conteo: 0
+2025-05-04 16:29:27.0356 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Reset.
+2025-05-04 16:29:27.0356 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Cargando mesas desde la base de datos...
+2025-05-04 16:29:28.1464 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:29:28.1464 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:29:28.1464 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:29:28.1464 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:29:28.1464 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - La colección de mesas ha cambiado. Acción: Add.
+2025-05-04 16:29:28.1464 INFO Restaurant_SAP.ViewModels.MesasViewModel - Se cargaron 5 mesas desde la base de datos.
+2025-05-04 16:29:28.1464 TRACE Restaurant_SAP.ViewModels.MesasViewModel - Método IniciarTimer llamado.
+2025-05-04 16:29:28.1464 INFO Restaurant_SAP.ViewModels.MesasViewModel - Timer para verificar reservas iniciado con intervalo de 1 minuto.
+2025-05-04 16:29:28.1464 DEBUG Restaurant_SAP.ViewModels.MesasViewModel - MesasViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:29:28.1464 TRACE Restaurant_SAP.ViewModels.MenusViewModel - Constructor MenusViewModel llamado.
+2025-05-04 16:29:28.1464 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha sido actualizada. Nuevo conteo: 0
+2025-05-04 16:29:28.1464 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Reset.
+2025-05-04 16:29:28.1464 TRACE Restaurant_SAP.ViewModels.MenusViewModel - Cargando menús desde la base de datos...
+2025-05-04 16:29:28.1939 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:29:28.1939 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:29:28.1939 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - La colección de menús ha cambiado. Acción: Add.
+2025-05-04 16:29:28.1939 INFO Restaurant_SAP.ViewModels.MenusViewModel - Se cargaron 3 menús desde la base de datos.
+2025-05-04 16:29:28.1939 DEBUG Restaurant_SAP.ViewModels.MenusViewModel - MenusViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:29:28.1939 TRACE Restaurant_SAP.ViewModels.MapaMesasViewModel - Constructor MapaMesasViewModel llamado.
+2025-05-04 16:29:28.1939 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Colección de mesas para el mapa actualizada. Nuevo conteo: 5.
+2025-05-04 16:29:28.1939 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Cantidad de mesas en el mapa: 5.
+2025-05-04 16:29:28.1939 DEBUG Restaurant_SAP.ViewModels.MapaMesasViewModel - Suscrito al evento PropertyChanged de MesasViewModel.
+2025-05-04 16:29:28.1939 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - Constructor ReservasViewModel llamado.
+2025-05-04 16:29:28.2088 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - Reserva en edición cambiada. Nueva reserva: 0
+2025-05-04 16:29:28.2088 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - Reservas actualizadas. Nuevo conteo: 0
+2025-05-04 16:29:28.2088 DEBUG Restaurant_SAP.ViewModels.ReservasViewModel - ReservasViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext, MesasViewModel: Restaurant_SAP.ViewModels.MesasViewModel.
+2025-05-04 16:29:28.2088 TRACE Restaurant_SAP.ViewModels.ConfiguracionViewModel - Constructor ConfiguracionViewModel llamado.
+2025-05-04 16:29:28.2088 DEBUG Restaurant_SAP.ViewModels.ConfiguracionViewModel - Idioma guardado al inicio: ''.
+2025-05-04 16:29:28.2088 INFO Restaurant_SAP.ViewModels.ConfiguracionViewModel - Idioma seleccionado al inicio: ''.
+2025-05-04 16:29:28.2088 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Constructor HistorialEconomicoViewModel llamado.
+2025-05-04 16:29:28.2088 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de pedidos para el historial actualizada. Nuevo conteo: 0.
+2025-05-04 16:29:28.2232 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de menús cargada para el filtro. Conteo: 0.
+2025-05-04 16:29:28.2232 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Colección de mesas cargada para el filtro. Conteo: 0.
+2025-05-04 16:29:28.2232 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Cargando menús y mesas para los filtros.
+2025-05-04 16:29:28.2232 INFO Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Se cargaron 3 menús para el filtro.
+2025-05-04 16:29:28.2232 INFO Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Se cargaron 5 mesas para el filtro.
+2025-05-04 16:29:28.2232 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Total económico actualizado: 0.
+2025-05-04 16:29:28.2232 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Pedidos y total inicializados/limpiados.
+2025-05-04 16:29:28.2232 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Mesa seleccionada para el filtro: Todos.
+2025-05-04 16:29:28.2232 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Menú seleccionado para el filtro: Todos.
+2025-05-04 16:29:28.2232 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Filtros de mesa y menú establecidos en 'Todos' inicialmente.
+2025-05-04 16:29:28.2232 TRACE Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - Carga de menús y mesas completada.
+2025-05-04 16:29:28.2232 DEBUG Restaurant_SAP.ViewModels.HistorialEconomicoViewModel - HistorialEconomicoViewModel inicializado con contexto: Restaurant_SAP.DB.RestauranteContext.
+2025-05-04 16:29:28.7796 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanGuardarCambios llamado. Retornando: False.
+2025-05-04 16:29:28.7796 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanEliminarMesa llamado. Retornando: False.
+2025-05-04 16:29:28.7878 TRACE Restaurant_SAP.ViewModels.MesasViewModel - CanAgregarMesa llamado. Retornando: true.
+2025-05-04 16:29:28.7878 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanAgregarReserva llamado. Retornando: true.
+2025-05-04 16:29:28.7878 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanGuardarCambiosReserva llamado. Retornando: True.
+2025-05-04 16:29:28.7878 TRACE Restaurant_SAP.ViewModels.ReservasViewModel - CanEliminarReserva llamado. Retornando: True.
+2025-05-04 16:29:28.7878 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanGuardarCambios llamado. Retornando: False.
+2025-05-04 16:29:28.7878 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanEliminarMenu llamado. Retornando: False.
+2025-05-04 16:29:28.8029 TRACE Restaurant_SAP.ViewModels.MenusViewModel - CanAgregarMenu llamado. Retornando: true.

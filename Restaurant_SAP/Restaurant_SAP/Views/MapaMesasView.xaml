@@ -49,7 +49,7 @@
                     </ItemsControl.ItemContainerStyle>
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <Border Canvas.Left="{Binding CoordX}" Canvas.Top="{Binding CoordY}" Margin="5" CornerRadius="5">
+                            <Border Canvas.Left="{Binding CoordX}" Canvas.Top="{Binding CoordY}" Margin="2" CornerRadius="5">
                                 <Border.Style>
                                     <Style TargetType="Border">
                                         <Setter Property="Background" Value="LightGreen" />
@@ -67,10 +67,12 @@
                                     </Style>
                                 </Border.Style>
                                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                                    <TextBlock Text="{x:Static p:Resources.TextBlock_IconoMesa}" HorizontalAlignment="Center" />
+                                    <Image Source="/Restaurant_SAP;component/Images/dinner-table.png"
+       Width="75"
+       Height="30"
+       HorizontalAlignment="Center"
+       VerticalAlignment="Center" />
                                     <TextBlock Text="{Binding Numero}" HorizontalAlignment="Center" FontWeight="Bold" />
-                                    <TextBlock Text="{Binding CoordX}" HorizontalAlignment="Center" FontWeight="Bold" />
-                                    <TextBlock Text="{Binding CoordY}" HorizontalAlignment="Center" FontWeight="Bold" />
                                 </StackPanel>
                             </Border>
                         </DataTemplate>
