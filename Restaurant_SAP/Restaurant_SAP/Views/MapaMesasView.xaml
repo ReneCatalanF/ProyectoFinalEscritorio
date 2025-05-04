@@ -13,7 +13,13 @@
         <converter:GridToCanvasConverter x:Key="GridToCanvasConverter" />
     </UserControl.Resources>
     <Grid>
-        <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1" Padding="10" Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Padding="10" Margin="10">
             <Canvas x:Name="MapaCanvas">
                 <ItemsControl ItemsSource="{Binding Mesas}">
                     <ItemsControl.ItemsPanel>
@@ -71,6 +77,9 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
             </Canvas>
+        </Border>
+        <Border Grid.Row="0" Grid.Column="0" IsHitTestVisible="False" BorderThickness="0" Padding="10" Margin="10">
+            <Canvas x:Name="GridCanvas" Width="{Binding ActualWidth, ElementName=MapaCanvas}" Height="{Binding ActualHeight, ElementName=MapaCanvas}" />
         </Border>
     </Grid>
 </UserControl>
