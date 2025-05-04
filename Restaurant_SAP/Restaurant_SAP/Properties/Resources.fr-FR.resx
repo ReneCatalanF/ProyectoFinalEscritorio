@@ -1,243 +1,333 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <xsd:element name="root" msdata:IsDataSet="true">
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
             <xsd:complexType>
-                <xsd:choice maxOccurs="unbounded">
-                    <xsd:element name="data">
-                        <xsd:complexType>
-                            <xsd:sequence>
-                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-                            </xsd:sequence>
-                            <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-                        </xsd:complexType>
-                    </xsd:element>
-                    <xsd:element name="resheader">
-                        <xsd:complexType>
-                            <xsd:sequence>
-                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                            </xsd:sequence>
-                            <xsd:attribute name="name" type="xsd:string" use="required" />
-                        </xsd:complexType>
-                    </xsd:element>
-                </xsd:choice>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
-        </xsd:element>
-    </xsd:schema>
-    <resheader name="resmimetype">
-        <value>text/microsoft-resx</value>
-    </resheader>
-    <resheader name="version">
-        <value>1.3</value>
-    </resheader>
-    <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <data name="WindowTitle" xml:space="preserve">
-        <value>Gestion de Restaurant SAP</value>
-    </data>
-    <data name="TabHeader_MapaMesas" xml:space="preserve">
-        <value>Plan des tables</value>
-    </data>
-    <data name="TabHeader_MesasPedidos" xml:space="preserve">
-        <value>Tables et Commandes</value>
-    </data>
-    <data name="TabHeader_HistorialEconomico" xml:space="preserve">
-        <value>Historique Économique</value>
-    </data>
-    <data name="TabHeader_AdministrarMesas" xml:space="preserve">
-        <value>Gérer les tables</value>
-    </data>
-    <data name="TabHeader_AdministrarReservas" xml:space="preserve">
-        <value>Gérer les réservations</value>
-    </data>
-    <data name="TabHeader_AdministrarMenu" xml:space="preserve">
-        <value>Gérer le menu</value>
-    </data>
-    <data name="ComboBox_SeleccionarMesa" xml:space="preserve">
-        <value>-- Sélectionner une table --</value>
-    </data>
-    <data name="ListBox_Reservas_FechaInicio" xml:space="preserve">
-        <value>Début:</value>
-    </data>
-    <data name="ListBox_Reservas_FechaFin" xml:space="preserve">
-        <value>Fin:</value>
-    </data>
-    <data name="GroupBox_EdicionReserva" xml:space="preserve">
-        <value>Modifier la réservation</value>
-    </data>
-    <data name="Button_AgregarReserva" xml:space="preserve">
-        <value>Ajouter</value>
-    </data>
-    <data name="Button_GuardarReserva" xml:space="preserve">
-        <value>Enregistrer</value>
-    </data>
-    <data name="Button_EliminarReserva" xml:space="preserve">
-        <value>Supprimer</value>
-    </data>
-    <data name="Button_CancelarReserva" xml:space="preserve">
-        <value>Annuler</value>
-    </data>
-    <data name="TextBlock_AgregandoPedido" xml:space="preserve">
-        <value>Ajouter une commande</value>
-    </data>
-    <data name="TextBlock_MesaSeleccionada" xml:space="preserve">
-        <value>Table sélectionnée: </value>
-    </data>
-    <data name="TextBlock_Menu" xml:space="preserve">
-        <value>Menu:</value>
-    </data>
-    <data name="Button_AceptarPedido" xml:space="preserve">
-        <value>Accepter</value>
-    </data>
-    <data name="TextBlock_Cantidad" xml:space="preserve">
-        <value>Quantité:</value>
-    </data>
-    <data name="Button_CancelarPedido" xml:space="preserve">
-        <value>Annuler</value>
-    </data>
-    <data name="ListBox_Mesas_Numero" xml:space="preserve">
-        <value>Numéro</value>
-    </data>
-    <data name="ListBox_Mesas_Descripcion" xml:space="preserve">
-        <value>Description</value>
-    </data>
-    <data name="ListBox_Mesas_Estado" xml:space="preserve">
-        <value>État</value>
-    </data>
-    <data name="GroupBox_EdicionMesa" xml:space="preserve">
-        <value>Modifier la table</value>
-    </data>
-    <data name="TextBlock_NumeroMesa" xml:space="preserve">
-        <value>Numéro:</value>
-    </data>
-    <data name="TextBlock_DescripcionMesa" xml:space="preserve">
-        <value>Description:</value>
-    </data>
-    <data name="TextBlock_EstadoMesa" xml:space="preserve">
-        <value>État:</value>
-    </data>
-    <data name="Button_GuardarMesa" xml:space="preserve">
-        <value>Enregistrer</value>
-    </data>
-    <data name="Button_CancelarMesa" xml:space="preserve">
-        <value>Annuler</value>
-    </data>
-    <data name="Button_EliminarMesa" xml:space="preserve">
-        <value>Supprimer</value>
-    </data>
-    <data name="GroupBox_NuevaMesa" xml:space="preserve">
-        <value>Nouvelle table</value>
-    </data>
-    <data name="Button_AgregarNuevaMesa" xml:space="preserve">
-        <value>Ajouter une table</value>
-    </data>
-    <data name="ListBox_Pedidos_MesaNumero" xml:space="preserve">
-        <value>N° de table</value>
-    </data>
-    <data name="ListBox_Pedidos_MenuNombre" xml:space="preserve">
-        <value>Nom du menu</value>
-    </data>
-    <data name="ListBox_Pedidos_MenuDescripcion" xml:space="preserve">
-        <value>Description du menu</value>
-    </data>
-    <data name="ListBox_Pedidos_EstadoPedido" xml:space="preserve">
-        <value>État</value>
-    </data>
-    <data name="ListBox_Pedidos_Cantidad" xml:space="preserve">
-        <value>Quantité</value>
-    </data>
-    <data name="ListBox_Pedidos_Precio" xml:space="preserve">
-        <value>Prix</value>
-    </data>
-    <data name="Button_AgregarPedidoMesa" xml:space="preserve">
-        <value>Ajouter une commande</value>
-    </data>
-    <data name="Button_PedidoServido" xml:space="preserve">
-        <value>Commande servie</value>
-    </data>
-    <data name="Button_PagarMesa" xml:space="preserve">
-        <value>Payer la table</value>
-    </data>
-    <data name="ListBox_Menus_Nombre" xml:space="preserve">
-        <value>Nom</value>
-    </data>
-    <data name="ListBox_Menus_Descripcion" xml:space="preserve">
-        <value>Description</value>
-    </data>
-    <data name="ListBox_Menus_Precio" xml:space="preserve">
-        <value>Prix</value>
-    </data>
-    <data name="GroupBox_EdicionMenu" xml:space="preserve">
-        <value>Modifier le menu</value>
-    </data>
-    <data name="TextBlock_NombreMenu" xml:space="preserve">
-        <value>Nom:</value>
-    </data>
-    <data name="TextBlock_DescripcionMenu" xml:space="preserve">
-        <value>Description:</value>
-    </data>
-    <data name="TextBlock_PrecioMenu" xml:space="preserve">
-        <value>Prix:</value>
-    </data>
-    <data name="Button_GuardarMenu" xml:space="preserve">
-        <value>Enregistrer</value>
-    </data>
-    <data name="Button_CancelarMenu" xml:space="preserve">
-        <value>Annuler</value>
-    </data>
-    <data name="Button_EliminarMenu" xml:space="preserve">
-        <value>Supprimer</value>
-    </data>
-    <data name="GroupBox_NuevoMenu" xml:space="preserve">
-        <value>Nouveau menu</value>
-    </data>
-    <data name="Button_AgregarNuevoMenu" xml:space="preserve">
-        <value>Ajouter un menu</value>
-    </data>
-    <data name="TextBlock_IconoMesa" xml:space="preserve">
-        <value>[Icône de la table]</value>
-    </data>
-    <data name="TextBlock_FiltrarPorMesa" xml:space="preserve">
-        <value>Filtrer par table:</value>
-    </data>
-    <data name="TextBlock_FiltrarPorMenu" xml:space="preserve">
-        <value>Filtrer par menu:</value>
-    </data>
-    <data name="TextBlock_DesdeFecha" xml:space="preserve">
-        <value>Depuis le:</value>
-    </data>
-    <data name="TextBlock_HastaFecha" xml:space="preserve">
-        <value>Jusqu'au:</value>
-    </data>
-    <data name="Button_BuscarPedidos" xml:space="preserve">
-        <value>Rechercher</value>
-    </data>
-    <data name="GridViewColumn_FechaHora" xml:space="preserve">
-        <value>Date/Heure</value>
-    </data>
-    <data name="GridViewColumn_NombreMenu" xml:space="preserve">
-        <value>Nom du menu</value>
-    </data>
-    <data name="GridViewColumn_DescripcionMenu" xml:space="preserve">
-        <value>Description du menu</value>
-    </data>
-    <data name="GridViewColumn_NumeroMesaHistorial" xml:space="preserve">
-        <value>N° de table</value>
-    </data>
-    <data name="GridViewColumn_PrecioHistorial" xml:space="preserve">
-        <value>Prix</value>
-    </data>
-    <data name="TextBlock_Total" xml:space="preserve">
-        <value>Total:</value>
-    </data>
-    <data name="Button_GenerarPDF" xml:space="preserve">
-        <value>Générer un PDF</value>
-    </data>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>Gestion de Restaurant SAP</value>
+  </data>
+  <data name="TabHeader_MapaMesas" xml:space="preserve">
+    <value>Plan des tables</value>
+  </data>
+  <data name="TabHeader_MesasPedidos" xml:space="preserve">
+    <value>Tables et Commandes</value>
+  </data>
+  <data name="TabHeader_HistorialEconomico" xml:space="preserve">
+    <value>Historique Économique</value>
+  </data>
+  <data name="TabHeader_AdministrarMesas" xml:space="preserve">
+    <value>Gérer les tables</value>
+  </data>
+  <data name="TabHeader_AdministrarReservas" xml:space="preserve">
+    <value>Gérer les réservations</value>
+  </data>
+  <data name="TabHeader_AdministrarMenu" xml:space="preserve">
+    <value>Gérer le menu</value>
+  </data>
+  <data name="ComboBox_SeleccionarMesa" xml:space="preserve">
+    <value>-- Sélectionner une table --</value>
+  </data>
+  <data name="ListBox_Reservas_FechaInicio" xml:space="preserve">
+    <value>Début:</value>
+  </data>
+  <data name="ListBox_Reservas_FechaFin" xml:space="preserve">
+    <value>Fin:</value>
+  </data>
+  <data name="GroupBox_EdicionReserva" xml:space="preserve">
+    <value>Modifier la réservation</value>
+  </data>
+  <data name="Button_AgregarReserva" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="Button_GuardarReserva" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="Button_EliminarReserva" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="Button_CancelarReserva" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="TextBlock_AgregandoPedido" xml:space="preserve">
+    <value>Ajouter une commande</value>
+  </data>
+  <data name="TextBlock_MesaSeleccionada" xml:space="preserve">
+    <value>Table sélectionnée: </value>
+  </data>
+  <data name="TextBlock_Menu" xml:space="preserve">
+    <value>Menu:</value>
+  </data>
+  <data name="Button_AceptarPedido" xml:space="preserve">
+    <value>Accepter</value>
+  </data>
+  <data name="TextBlock_Cantidad" xml:space="preserve">
+    <value>Quantité:</value>
+  </data>
+  <data name="Button_CancelarPedido" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="ListBox_Mesas_Numero" xml:space="preserve">
+    <value>Numéro</value>
+  </data>
+  <data name="ListBox_Mesas_Descripcion" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ListBox_Mesas_Estado" xml:space="preserve">
+    <value>État</value>
+  </data>
+  <data name="GroupBox_EdicionMesa" xml:space="preserve">
+    <value>Modifier la table</value>
+  </data>
+  <data name="TextBlock_NumeroMesa" xml:space="preserve">
+    <value>Numéro:</value>
+  </data>
+  <data name="TextBlock_DescripcionMesa" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="TextBlock_EstadoMesa" xml:space="preserve">
+    <value>État:</value>
+  </data>
+  <data name="Button_GuardarMesa" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="Button_CancelarMesa" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Button_EliminarMesa" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="GroupBox_NuevaMesa" xml:space="preserve">
+    <value>Nouvelle table</value>
+  </data>
+  <data name="Button_AgregarNuevaMesa" xml:space="preserve">
+    <value>Ajouter une table</value>
+  </data>
+  <data name="ListBox_Pedidos_MesaNumero" xml:space="preserve">
+    <value>N° de table</value>
+  </data>
+  <data name="ListBox_Pedidos_MenuNombre" xml:space="preserve">
+    <value>Nom du menu</value>
+  </data>
+  <data name="ListBox_Pedidos_MenuDescripcion" xml:space="preserve">
+    <value>Description du menu</value>
+  </data>
+  <data name="ListBox_Pedidos_EstadoPedido" xml:space="preserve">
+    <value>État</value>
+  </data>
+  <data name="ListBox_Pedidos_Cantidad" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="ListBox_Pedidos_Precio" xml:space="preserve">
+    <value>Prix</value>
+  </data>
+  <data name="Button_AgregarPedidoMesa" xml:space="preserve">
+    <value>Ajouter une commande</value>
+  </data>
+  <data name="Button_PedidoServido" xml:space="preserve">
+    <value>Commande servie</value>
+  </data>
+  <data name="Button_PagarMesa" xml:space="preserve">
+    <value>Payer la table</value>
+  </data>
+  <data name="ListBox_Menus_Nombre" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="ListBox_Menus_Descripcion" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ListBox_Menus_Precio" xml:space="preserve">
+    <value>Prix</value>
+  </data>
+  <data name="GroupBox_EdicionMenu" xml:space="preserve">
+    <value>Modifier le menu</value>
+  </data>
+  <data name="TextBlock_NombreMenu" xml:space="preserve">
+    <value>Nom:</value>
+  </data>
+  <data name="TextBlock_DescripcionMenu" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="TextBlock_PrecioMenu" xml:space="preserve">
+    <value>Prix:</value>
+  </data>
+  <data name="Button_GuardarMenu" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="Button_CancelarMenu" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Button_EliminarMenu" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="GroupBox_NuevoMenu" xml:space="preserve">
+    <value>Nouveau menu</value>
+  </data>
+  <data name="Button_AgregarNuevoMenu" xml:space="preserve">
+    <value>Ajouter un menu</value>
+  </data>
+  <data name="TextBlock_IconoMesa" xml:space="preserve">
+    <value>[Icône de la table]</value>
+  </data>
+  <data name="TextBlock_FiltrarPorMesa" xml:space="preserve">
+    <value>Filtrer par table:</value>
+  </data>
+  <data name="TextBlock_FiltrarPorMenu" xml:space="preserve">
+    <value>Filtrer par menu:</value>
+  </data>
+  <data name="TextBlock_DesdeFecha" xml:space="preserve">
+    <value>Depuis le:</value>
+  </data>
+  <data name="TextBlock_HastaFecha" xml:space="preserve">
+    <value>Jusqu'au:</value>
+  </data>
+  <data name="Button_BuscarPedidos" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="GridViewColumn_FechaHora" xml:space="preserve">
+    <value>Date/Heure</value>
+  </data>
+  <data name="GridViewColumn_NombreMenu" xml:space="preserve">
+    <value>Nom du menu</value>
+  </data>
+  <data name="GridViewColumn_DescripcionMenu" xml:space="preserve">
+    <value>Description du menu</value>
+  </data>
+  <data name="GridViewColumn_NumeroMesaHistorial" xml:space="preserve">
+    <value>N° de table</value>
+  </data>
+  <data name="GridViewColumn_PrecioHistorial" xml:space="preserve">
+    <value>Prix</value>
+  </data>
+  <data name="TextBlock_Total" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="Button_GenerarPDF" xml:space="preserve">
+    <value>Générer un PDF</value>
+  </data>
+  <data name="Button_Cancelar" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Button_Configuracion" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="Button_Guardar" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="TextBlock_SeleccionarIdioma" xml:space="preserve">
+    <value>Sélectionner la langue</value>
+  </data>
 </root>

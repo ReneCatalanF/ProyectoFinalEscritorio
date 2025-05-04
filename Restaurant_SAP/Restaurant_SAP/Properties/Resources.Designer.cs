@@ -117,6 +117,15 @@ namespace Restaurant_SAP.Properties {
         /// <summary>
         ///   Busca una cadena traducida similar a Cancelar.
         /// </summary>
+        public static string Button_Cancelar {
+            get {
+                return ResourceManager.GetString("Button_Cancelar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cancelar.
+        /// </summary>
         public static string Button_CancelarMenu {
             get {
                 return ResourceManager.GetString("Button_CancelarMenu", resourceCulture);
@@ -147,6 +156,15 @@ namespace Restaurant_SAP.Properties {
         public static string Button_CancelarReserva {
             get {
                 return ResourceManager.GetString("Button_CancelarReserva", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Configuración.
+        /// </summary>
+        public static string Button_Configuracion {
+            get {
+                return ResourceManager.GetString("Button_Configuracion", resourceCulture);
             }
         }
         
@@ -183,6 +201,15 @@ namespace Restaurant_SAP.Properties {
         public static string Button_GenerarPDF {
             get {
                 return ResourceManager.GetString("Button_GenerarPDF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Guardar.
+        /// </summary>
+        public static string Button_Guardar {
+            get {
+                return ResourceManager.GetString("Button_Guardar", resourceCulture);
             }
         }
         
@@ -642,6 +669,15 @@ namespace Restaurant_SAP.Properties {
         public static string TextBlock_PrecioMenu {
             get {
                 return ResourceManager.GetString("TextBlock_PrecioMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Seleccionar Idioma.
+        /// </summary>
+        public static string TextBlock_SeleccionarIdioma {
+            get {
+                return ResourceManager.GetString("TextBlock_SeleccionarIdioma", resourceCulture);
             }
         }
         

@@ -8,29 +8,50 @@
         xmlns:viewsmodel="clr-namespace:Restaurant_SAP.ViewModels"
         xmlns:p="clr-namespace:Restaurant_SAP.Properties"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-
+        Title="{x:Static p:Resources.WindowTitle}" Height="450" Width="800">
     <Window.Resources>
         <viewsmodel:ViewModelLocator x:Key="Locator"/>
     </Window.Resources>
-    <TabControl DataContext="{StaticResource Locator}">
-        <TabItem Header="{x:Static p:Resources.TabHeader_MapaMesas}">
-            <views:MapaMesasView DataContext="{Binding MapaMesasViewModel}"/>
-        </TabItem>
-        <TabItem Header="{x:Static p:Resources.TabHeader_MesasPedidos}">
-            <views:MesaPedidoView DataContext="{Binding MesaPedidoViewModel}"/>
-        </TabItem>
-        <TabItem Header="{x:Static p:Resources.TabHeader_HistorialEconomico}">
-            <views:HistorialEconomicoView DataContext="{Binding HistorialEconomicoViewModel}"/>
-        </TabItem>
-        <TabItem Header="{x:Static p:Resources.TabHeader_AdministrarMesas}" HorizontalAlignment="Right">
-            <views:MesasView DataContext="{Binding MesasViewModel}"/>
-        </TabItem>
-        <TabItem Header="{x:Static p:Resources.TabHeader_AdministrarReservas}" HorizontalAlignment="Right">
-            <views:ReservasView DataContext="{Binding ReservasViewModel}"/>
-        </TabItem>
-        <TabItem Header="{x:Static p:Resources.TabHeader_AdministrarMenu}" HorizontalAlignment="Right">
-            <views:MenusView DataContext="{Binding MenusViewModel}"/>
-        </TabItem>
-    </TabControl>
+    <Grid DataContext="{StaticResource Locator}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+            <Button Content="{x:Static p:Resources.Button_Configuracion}"
+                    Command="{Binding ConfiguracionViewModel.AbrirModalCommand}"
+                    x:Name="btnConfiguracion"/>
+        </StackPanel>
+
+        <TabControl Grid.Row="1">
+            <TabItem Header="{x:Static p:Resources.TabHeader_MapaMesas}">
+                <views:MapaMesasView DataContext="{Binding MapaMesasViewModel}"/>
+            </TabItem>
+            <TabItem Header="{x:Static p:Resources.TabHeader_MesasPedidos}">
+                <views:MesaPedidoView DataContext="{Binding MesaPedidoViewModel}"/>
+            </TabItem>
+            <TabItem Header="{x:Static p:Resources.TabHeader_HistorialEconomico}">
+                <views:HistorialEconomicoView DataContext="{Binding HistorialEconomicoViewModel}"/>
+            </TabItem>
+            <TabItem Header="{x:Static p:Resources.TabHeader_AdministrarMesas}" HorizontalAlignment="Right">
+                <views:MesasView DataContext="{Binding MesasViewModel}"/>
+            </TabItem>
+            <TabItem Header="{x:Static p:Resources.TabHeader_AdministrarReservas}" HorizontalAlignment="Right">
+                <views:ReservasView DataContext="{Binding ReservasViewModel}"/>
+            </TabItem>
+            <TabItem Header="{x:Static p:Resources.TabHeader_AdministrarMenu}" HorizontalAlignment="Right">
+                <views:MenusView DataContext="{Binding MenusViewModel}"/>
+            </TabItem>
+        </TabControl>
+
+        <Popup IsOpen="{Binding ConfiguracionViewModel.IsModalAbierto}"
+               PlacementTarget="{Binding ElementName=btnConfiguracion}"
+               Placement="Bottom"
+               StaysOpen="False">
+            <Border Background="White" BorderBrush="Black" BorderThickness="1" Padding="10">
+                <views:ConfiguracionView DataContext="{Binding ConfiguracionViewModel}"/>
+            </Border>
+        </Popup>
+    </Grid>
 </Window>
