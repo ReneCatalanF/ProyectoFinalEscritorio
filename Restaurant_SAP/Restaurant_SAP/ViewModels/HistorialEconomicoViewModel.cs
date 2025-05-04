@@ -10,12 +10,14 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 using Microsoft.Win32; // Para SaveFileDialog
+using NLog;
 
 namespace Restaurant_SAP.ViewModels
 {
     public class HistorialEconomicoViewModel : INotifyPropertyChanged
     {
         private readonly RestauranteContext _context;
+        private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
         public event PropertyChangedEventHandler? PropertyChanged;
 
         private double _total = 0;
@@ -26,6 +28,7 @@ namespace Restaurant_SAP.ViewModels
             {
                 _total = value;
                 OnPropertyChanged(nameof(Total));
+                _logger.Debug($"Total económico actualizado: {_total}.");
             }
         }
 
@@ -37,6 +40,7 @@ namespace Restaurant_SAP.ViewModels
             {
                 _pedidos = value;
                 OnPropertyChanged(nameof(Pedidos));
+                _logger.Debug($"Colección de pedidos para el historial actualizada. Nuevo conteo: {_pedidos?.Count}.");
             }
         }
 
@@ -48,6 +52,7 @@ namespace Restaurant_SAP.ViewModels
             {
                 _mesaSeleccionada = value;
                 OnPropertyChanged(nameof(MesaSeleccionada));
+                _logger.Debug($"Mesa seleccionada para el filtro: {(_mesaSeleccionada as Mesa)?.Descripcion ?? "Todos"}.");
             }
         }
 
@@ -59,6 +64,7 @@ namespace Restaurant_SAP.ViewModels
             {
                 _menuSeleccionado = value;
                 OnPropertyChanged(nameof(MenuSeleccionado));
+                _logger.Debug($"Menú seleccionado para el filtro: {(_menuSeleccionado as Menu)?.Nombre ?? "Todos"}.");
             }
         }
 
@@ -70,6 +76,7 @@ namespace Restaurant_SAP.ViewModels
             {
                 _fechaDesde = value;
                 OnPropertyChanged(nameof(FechaDesde));
+                _logger.Debug($"Fecha de inicio del filtro establecida en: {_fechaDesde?.ToShortDateString() ?? "Sin especificar"}.");
             }
         }
 
@@ -81,6 +88,7 @@ namespace Restaurant_SAP.ViewModels
             {
                 _fechaHasta = value;
                 OnPropertyChanged(nameof(FechaHasta));
+                _logger.Debug($"Fecha de fin del filtro establecida en: {_fechaHasta?.ToShortDateString() ?? "Sin especificar"}.");
             }
         }
 
@@ -92,6 +100,7 @@ namespace Restaurant_SAP.ViewModels
             {
                 _menus = value;
                 OnPropertyChanged(nameof(Menus));
+                _logger.Debug($"Colección de menús cargada para el filtro. Conteo: {_menus?.Count}.");
             }
         }
 
@@ -103,6 +112,7 @@ namespace Restaurant_SAP.ViewModels
             {
                 _mesas = value;
                 OnPropertyChanged(nameof(Mesas));
+                _logger.Debug($"Colección de mesas cargada para el filtro. Conteo: {_mesas?.Count}.");
             }
         }
 
@@ -116,6 +126,7 @@ namespace Restaurant_SAP.ViewModels
 
         public HistorialEconomicoViewModel(RestauranteContext context)
         {
+            _logger.Trace("Constructor HistorialEconomicoViewModel llamado.");
             _context = context;
             Pedidos = new ObservableCollection<Pedido>();
             Menus = new ObservableCollection<Menu>();
@@ -123,10 +134,12 @@ namespace Restaurant_SAP.ViewModels
             BuscarPedidosCommand = new RelayCommand(BuscarPedidos);
             GenerarPdfCommand = new RelayCommand(GenerarPdf); // Inicializar el nuevo comando
             CargarMenusYMesas();
+            _logger.Debug($"HistorialEconomicoViewModel inicializado con contexto: {_context}.");
         }
 
         public void CargarMenusYMesas()
         {
+            _logger.Trace("Cargando menús y mesas para los filtros.");
             // Cargar Menús
             Menus.Clear();
             var menusDesdeDb = _context.Menus.ToList();
@@ -136,6 +149,7 @@ namespace Restaurant_SAP.ViewModels
                 Menus.Add(menu);
             }
             OnPropertyChanged(nameof(Menus));
+            _logger.Info($"Se cargaron {menusDesdeDb.Count} menús para el filtro.");
 
             // Cargar Mesas
             Mesas.Clear();
@@ -146,52 +160,66 @@ namespace Restaurant_SAP.ViewModels
                 Mesas.Add(mesa);
             }
             OnPropertyChanged(nameof(Mesas));
+            _logger.Info($"Se cargaron {mesasDesdeDb.Count} mesas para el filtro.");
 
             // Limpiar los pedidos al cargar la vista
             Pedidos.Clear();
             Total = 0;
             OnPropertyChanged(nameof(Pedidos));
             OnPropertyChanged(nameof(Total));
+            _logger.Debug("Pedidos y total inicializados/limpiados.");
 
             // Establecer "Todos" como la selección inicial
             MesaSeleccionada = Mesas.First();
             MenuSeleccionado = Menus.First();
+            _logger.Debug("Filtros de mesa y menú establecidos en 'Todos' inicialmente.");
+            _logger.Trace("Carga de menús y mesas completada.");
         }
 
         public void BuscarPedidos(object parameter)
         {
+            _logger.Trace("Método BuscarPedidos llamado.");
             var filtroPedidos = _context.Pedidos.Where(p => p.Estado == EstadoPedido.Pagado);
+            _logger.Debug("Iniciando búsqueda de pedidos pagados.");
 
             if (MesaSeleccionada != null && (MesaSeleccionada as Mesa)?.Id != 0)
             {
                 filtroPedidos = filtroPedidos.Where(p => p.MesaId == (MesaSeleccionada as Mesa).Id);
+                _logger.Debug($"Filtrando por Mesa ID: {(MesaSeleccionada as Mesa).Id}.");
             }
 
             if (MenuSeleccionado != null && (MenuSeleccionado as Menu)?.Id != 0)
             {
                 filtroPedidos = filtroPedidos.Where(p => p.MenuId == (MenuSeleccionado as Menu).Id);
+                _logger.Debug($"Filtrando por Menú ID: {(MenuSeleccionado as Menu).Id}.");
             }
 
             if (FechaDesde.HasValue)
             {
                 filtroPedidos = filtroPedidos.Where(p => p.FechaHora >= FechaDesde.Value.Date);
+                _logger.Debug($"Filtrando desde la fecha: {FechaDesde.Value.ToShortDateString()}.");
             }
 
             if (FechaHasta.HasValue)
             {
                 filtroPedidos = filtroPedidos.Where(p => p.FechaHora <= FechaHasta.Value.Date.AddDays(1).AddSeconds(-1));
+                _logger.Debug($"Filtrando hasta la fecha: {FechaHasta.Value.ToShortDateString()}.");
             }
 
             Pedidos = new ObservableCollection<Pedido>(filtroPedidos.ToList());
             Total = Pedidos.Sum(pedido => pedido.Precio);
             OnPropertyChanged(nameof(Pedidos));
             OnPropertyChanged(nameof(Total));
+            _logger.Info($"Se encontraron {Pedidos.Count} pedidos con los criterios de búsqueda. Total: {Total}.");
+            _logger.Trace("Método BuscarPedidos completado.");
         }
 
         private void GenerarPdf(object parameter)
         {
+            _logger.Trace("Método GenerarPdf llamado.");
             if (Pedidos != null && Pedidos.Any())
             {
+                _logger.Debug($"Generando PDF para {Pedidos.Count} pedidos.");
                 byte[] pdfBytes = PdfGenerator.GeneratePedidosPdf(Pedidos.ToList());
 
                 SaveFileDialog dialog = new SaveFileDialog
@@ -207,17 +235,25 @@ namespace Restaurant_SAP.ViewModels
                     {
                         File.WriteAllBytes(dialog.FileName, pdfBytes);
                         MessageBox.Show($"El PDF se ha guardado en: {dialog.FileName}", "Éxito", MessageBoxButton.OK, MessageBoxImage.Information);
+                        _logger.Info($"PDF guardado exitosamente en: {dialog.FileName}.");
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show($"Error al guardar el PDF: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        _logger.Error(ex, "Error al guardar el archivo PDF.");
                     }
+                }
+                else
+                {
+                    _logger.Debug("Operación de guardar PDF cancelada por el usuario.");
                 }
             }
             else
             {
                 MessageBox.Show("No hay pedidos para generar el PDF.", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+                _logger.Info("No hay pedidos para generar el PDF.");
             }
+            _logger.Trace("Método GenerarPdf completado.");
         }
     }
 }

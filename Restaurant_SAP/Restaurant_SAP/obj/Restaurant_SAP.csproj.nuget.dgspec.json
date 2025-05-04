@@ -72,6 +72,10 @@
               "target": "Package",
               "version": "[7.0.20, )"
             },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.4.0, )"
+            },
             "PDFsharp-MigraDoc-WPF": {
               "target": "Package",
               "version": "[6.1.1, )"

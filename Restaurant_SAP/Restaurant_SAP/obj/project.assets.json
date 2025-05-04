@@ -818,6 +818,19 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "NLog/5.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "PDFsharp-MigraDoc-WPF/6.1.1": {
         "type": "package",
         "dependencies": {
@@ -2512,6 +2525,30 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "NLog/5.4.0": {
+      "sha512": "LwMcGSW3soF3/SL68rlJN3Eh3ktrAPycC3zZR/07OYBPraZUu0bygEC7kIN10lUQgMXT4s84Fi1chglGdGrQEg==",
+      "type": "package",
+      "path": "nlog/5.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "nlog.5.4.0.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
     "PDFsharp-MigraDoc-WPF/6.1.1": {
       "sha512": "/5PXAIV2ZqBTQeDLzSU3jJVSJ0W+VVpvWHHMw4Z/pYgm5WmuBnwyzO8FJE9hue+YQZV+A9GfJTxCEMGo+qJ4LQ==",
       "type": "package",
@@ -3664,6 +3701,7 @@
       "Microsoft.EntityFrameworkCore.Proxies >= 7.0.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.20",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.20",
+      "NLog >= 5.4.0",
       "PDFsharp-MigraDoc-WPF >= 6.1.1"
     ]
   },
@@ -3738,6 +3776,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.20, )"
+          },
+          "NLog": {
+            "target": "Package",
+            "version": "[5.4.0, )"
           },
           "PDFsharp-MigraDoc-WPF": {
             "target": "Package",
