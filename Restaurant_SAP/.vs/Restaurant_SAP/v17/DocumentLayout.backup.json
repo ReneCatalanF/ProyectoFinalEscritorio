@@ -64,7 +64,7 @@
               "RelativeDocumentMoniker": "Restaurant_SAP\\ViewModels\\MapaMesasViewModel.cs",
               "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\ViewModels\\MapaMesasViewModel.cs",
               "RelativeToolTip": "Restaurant_SAP\\ViewModels\\MapaMesasViewModel.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAqwFcAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAqwFYAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T20:14:03.513Z",
               "EditorCaption": ""
@@ -78,8 +78,7 @@
               "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Views\\MapaMesasView.xaml",
               "RelativeToolTip": "Restaurant_SAP\\Views\\MapaMesasView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-05T18:05:33.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T18:05:33.881Z"
             },
             {
               "$type": "Document",
@@ -91,8 +90,7 @@
               "RelativeToolTip": "Restaurant_SAP\\Commands\\RelayCommand.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAEQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:18:41.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T20:18:41.567Z"
             },
             {
               "$type": "Document",
@@ -104,8 +102,7 @@
               "RelativeToolTip": "Restaurant_SAP\\ViewModels\\MenusViewModel.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAAAHsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:12:33.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T20:12:33.11Z"
             },
             {
               "$type": "Document",
@@ -116,8 +113,7 @@
               "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Views\\MenusView.xaml",
               "RelativeToolTip": "Restaurant_SAP\\Views\\MenusView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-05T20:09:05.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T20:09:05.032Z"
             },
             {
               "$type": "Document",
@@ -128,8 +124,7 @@
               "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\MainWindow.xaml",
               "RelativeToolTip": "Restaurant_SAP\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-05T20:01:46.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T20:01:46.388Z"
             },
             {
               "$type": "Document",
@@ -140,8 +135,7 @@
               "ToolTip": "C:\\Users\\REENE\\OneDrive\\Documentos\\Master Desarrollo\\Progra Escritorio\\ProyectoFinal\\ProyectoFinalEscritorio\\Restaurant_SAP\\Restaurant_SAP\\Views\\ReservasView.xaml",
               "RelativeToolTip": "Restaurant_SAP\\Views\\ReservasView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-05T17:57:24.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T17:57:24.014Z"
             },
             {
               "$type": "Document",
@@ -153,8 +147,7 @@
               "RelativeToolTip": "Restaurant_SAP\\ViewModels\\ReservasViewModel.cs",
               "ViewState": "AgIAALcAAAAAAAAAAAAAALgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T19:26:58.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T19:26:58.404Z"
             }
           ]
         }

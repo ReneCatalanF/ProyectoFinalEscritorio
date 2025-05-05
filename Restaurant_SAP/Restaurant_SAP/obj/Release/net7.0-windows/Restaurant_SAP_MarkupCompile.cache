@@ -1,0 +1,20 @@
+﻿Restaurant_SAP
+
+
+winexe
+C#
+.cs
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\obj\Release\net7.0-windows\
+Restaurant_SAP
+none
+false
+TRACE;RELEASE;NET;NET7_0;NETCOREAPP
+C:\Users\REENE\OneDrive\Documentos\Master Desarrollo\Progra Escritorio\ProyectoFinal\ProyectoFinalEscritorio\Restaurant_SAP\Restaurant_SAP\App.xaml
+9-1515249630
+1-915576522
+42465216013
+256-1768379985
+MainWindow.xaml;Views\ConfiguracionView.xaml;Views\HistorialEconomicoView.xaml;Views\MapaMesasView.xaml;Views\MenusView.xaml;Views\MesaPedidoView.xaml;Views\MesasView.xaml;Views\PedidoAddView_Modal.xaml;Views\ReservasView.xaml;
+
+False
+
