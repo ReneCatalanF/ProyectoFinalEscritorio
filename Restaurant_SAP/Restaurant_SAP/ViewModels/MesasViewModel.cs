@@ -343,7 +343,7 @@ namespace Restaurant_SAP.ViewModels
         {
             _logger.Trace("Método VerificarReservas llamado por el timer.");
             DateTime ahora = DateTime.Now;
-            _logger.Debug($"Verificando reservas activas a las: {ahora}.");
+            _logger.Debug($"Verificando el estado de las mesas para reservas próximas a las: {ahora}.");
 
             try
             {
@@ -353,21 +353,19 @@ namespace Restaurant_SAP.ViewModels
                     .ToList();
                 _logger.Debug($"Se encontraron {reservasActivas.Count} reservas activas.");
 
-                // Usar la colección de reservas del ReservasViewModel
                 foreach (var reserva in reservasActivas)
                 {
                     _logger.Debug($"Verificando reserva ID: {reserva.Id}, Mesa ID: {reserva.MesaId}, Inicio: {reserva.FechaHoraInicio}, Fin: {reserva.FechaHoraFin}, Estado actual de la mesa: {reserva.Mesa?.Estado}.");
-                    if (reserva.FechaHoraInicio <= ahora && reserva.FechaHoraFin >= ahora && reserva.Mesa.Estado != EstadoMesa.Ocupada)
-                    {
-                        _logger.Info($"Mesa ID: {reserva.MesaId} marcada como Ocupada debido a la reserva ID: {reserva.Id}.");
-                        ActualizarEstadoMesa(reserva.MesaId, EstadoMesa.Ocupada);
-                    }
-                    else if (reserva.FechaHoraInicio.AddMinutes(-10) <= ahora && reserva.FechaHoraInicio > ahora && reserva.Mesa.Estado != EstadoMesa.Pronto)
+
+                    // Pronto reserva (morado) - 15 minutos antes del inicio
+                    if (reserva.FechaHoraInicio.AddMinutes(-15) <= ahora && reserva.FechaHoraInicio > ahora && reserva.Mesa.Estado != EstadoMesa.Pronto)
                     {
                         _logger.Info($"Mesa ID: {reserva.MesaId} marcada como Pronto debido a la reserva ID: {reserva.Id}.");
                         ActualizarEstadoMesa(reserva.MesaId, EstadoMesa.Pronto);
                     }
-                    else if (reserva.FechaHoraInicio > ahora && reserva.Mesa.Estado != EstadoMesa.Reservada)
+                    // Reservada (naranja) - cuando la hora actual está dentro del intervalo de la reserva
+                    else if (reserva.FechaHoraInicio <= ahora && reserva.FechaHoraFin >= ahora && reserva.Mesa.Estado != EstadoMesa.Reservada &&
+                        reserva.Mesa.Estado == EstadoMesa.Pronto)
                     {
                         _logger.Info($"Mesa ID: {reserva.MesaId} marcada como Reservada debido a la reserva ID: {reserva.Id}.");
                         ActualizarEstadoMesa(reserva.MesaId, EstadoMesa.Reservada);

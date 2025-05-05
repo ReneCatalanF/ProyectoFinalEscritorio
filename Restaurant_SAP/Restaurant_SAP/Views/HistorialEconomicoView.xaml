@@ -7,8 +7,10 @@
              xmlns:p="clr-namespace:Restaurant_SAP.Properties"
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800"
-             IsVisibleChanged="HistorialEconomicoView_IsVisibleChanged">
-    <Grid>
+             IsVisibleChanged="HistorialEconomicoView_IsVisibleChanged"
+             FontFamily="Segoe UI"
+             FontSize="14">
+    <Grid Margin="15">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*" />
@@ -16,53 +18,88 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
-
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
             <TextBlock Text="{x:Static p:Resources.TextBlock_FiltrarPorMesa}" Margin="5,0,5,0" VerticalAlignment="Center" />
-            <ComboBox x:Name="cmbFiltrarMesa" Width="100" Margin="0,0,10,0" ItemsSource="{Binding Mesas}" DisplayMemberPath="Numero" SelectedItem="{Binding MesaSeleccionada}" />
+            <ComboBox x:Name="cmbFiltrarMesa" Width="100" Margin="0,0,10,0"
+                      ItemsSource="{Binding Mesas}" DisplayMemberPath="Numero"
+                      SelectedItem="{Binding MesaSeleccionada}"
+                      Padding="5" BorderThickness="1" BorderBrush="#AAAAAA"/>
 
-            <TextBlock Text="{x:Static p:Resources.TextBlock_FiltrarPorMenu}" Margin="5,0,5,0" VerticalAlignment="Center" />
-            <ComboBox x:Name="cmbFiltrarMenu" Width="150" Margin="0,0,10,0" ItemsSource="{Binding Menus}" DisplayMemberPath="Nombre" SelectedItem="{Binding MenuSeleccionado}" />
+            <TextBlock Text="{x:Static p:Resources.TextBlock_FiltrarPorMenu}" Margin="15,0,5,0" VerticalAlignment="Center" />
+            <ComboBox x:Name="cmbFiltrarMenu" Width="150" Margin="0,0,10,0"
+                      ItemsSource="{Binding Menus}" DisplayMemberPath="Nombre"
+                      SelectedItem="{Binding MenuSeleccionado}"
+                      Padding="5" BorderThickness="1" BorderBrush="#AAAAAA"/>
 
-            <TextBlock Text="{x:Static p:Resources.TextBlock_DesdeFecha}" Margin="5,0,5,0" VerticalAlignment="Center" />
-            <DatePicker x:Name="dpDesde" Margin="0,0,10,0" SelectedDate="{Binding FechaDesde, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Text="{x:Static p:Resources.TextBlock_DesdeFecha}" Margin="15,0,5,0" VerticalAlignment="Center" />
+            <DatePicker x:Name="dpDesde" Margin="0,0,10,0"
+                        SelectedDate="{Binding FechaDesde, UpdateSourceTrigger=PropertyChanged}"
+                        Padding="5" BorderThickness="1" BorderBrush="#AAAAAA"/>
 
-            <TextBlock Text="{x:Static p:Resources.TextBlock_HastaFecha}" Margin="5,0,5,0" VerticalAlignment="Center" />
-            <DatePicker x:Name="dpHasta" SelectedDate="{Binding FechaHasta, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Text="{x:Static p:Resources.TextBlock_HastaFecha}" Margin="15,0,5,0" VerticalAlignment="Center" />
+            <DatePicker x:Name="dpHasta"
+                        SelectedDate="{Binding FechaHasta, UpdateSourceTrigger=PropertyChanged}"
+                        Padding="5" BorderThickness="1" BorderBrush="#AAAAAA"/>
 
-            <Button Content="{x:Static p:Resources.Button_BuscarPedidos}" Margin="10,0,0,0" Command="{Binding BuscarPedidosCommand}" />
+            <Button Content="{x:Static p:Resources.Button_BuscarPedidos}"
+                    Margin="20,0,0,0" Command="{Binding BuscarPedidosCommand}"
+                    Padding="8,5" BorderThickness="1" BorderBrush="#AAAAAA"/>
         </StackPanel>
 
-        <ListView Grid.Row="1" ItemsSource="{Binding Pedidos}" Margin="10" HorizontalAlignment="Stretch">
+        <ListView Grid.Row="1" ItemsSource="{Binding Pedidos}" Margin="10"
+                  HorizontalAlignment="Stretch" BorderThickness="1" BorderBrush="#AAAAAA">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="{x:Static p:Resources.GridViewColumn_FechaHora}" DisplayMemberBinding="{Binding FechaHora, StringFormat=dd/MM/yyyy HH:mm}" Width="Auto" />
-                    <GridViewColumn Header="{x:Static p:Resources.GridViewColumn_NombreMenu}" DisplayMemberBinding="{Binding Menu.Nombre}" Width="Auto" />
-                    <GridViewColumn Header="{x:Static p:Resources.GridViewColumn_DescripcionMenu}" DisplayMemberBinding="{Binding Menu.Descripcion}" Width="400" />
-                    <GridViewColumn Header="{x:Static p:Resources.GridViewColumn_NumeroMesaHistorial}" DisplayMemberBinding="{Binding Mesa.Numero}" Width="Auto" />
-                    <GridViewColumn Header="{x:Static p:Resources.GridViewColumn_PrecioHistorial}" DisplayMemberBinding="{Binding Precio, StringFormat=C}" Width="Auto" />
+                    <GridViewColumn Header="{x:Static p:Resources.GridViewColumn_FechaHora}"
+                                    DisplayMemberBinding="{Binding FechaHora, StringFormat=dd/MM/yyyy HH:mm}"
+                                    Width="Auto" />
+                    <GridViewColumn Header="{x:Static p:Resources.GridViewColumn_NombreMenu}"
+                                    DisplayMemberBinding="{Binding Menu.Nombre}"
+                                    Width="Auto" />
+                    <GridViewColumn Header="{x:Static p:Resources.GridViewColumn_DescripcionMenu}"
+                                    DisplayMemberBinding="{Binding Menu.Descripcion}"
+                                    Width="400" />
+                    <GridViewColumn Header="{x:Static p:Resources.GridViewColumn_NumeroMesaHistorial}"
+                                    DisplayMemberBinding="{Binding Mesa.Numero}"
+                                    Width="Auto" />
+                    <GridViewColumn Header="{x:Static p:Resources.GridViewColumn_PrecioHistorial}"
+                                    DisplayMemberBinding="{Binding Precio, StringFormat=C}"
+                                    Width="Auto" />
                 </GridView>
             </ListView.View>
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                    <Setter Property="Margin" Value="2"/>
+                    <Setter Property="Margin" Value="0,0,0,2"/>
+                    <Setter Property="Padding" Value="3"/>
+                    <Setter Property="Background" Value="White"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="#E0F2F7"/>
+                            <Setter Property="FontWeight" Value="SemiBold"/>
+                        </Trigger>
+                    </Style.Triggers>
                 </Style>
             </ListView.ItemContainerStyle>
         </ListView>
 
-        <Border Grid.Row="2" BorderBrush="LightGray" BorderThickness="1,0,0,0" Padding="5" Background="#EEEEEE">
+        <Border Grid.Row="2" BorderBrush="LightGray" BorderThickness="1,0,0,0" Padding="8" Background="#F5F5F5">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Grid.Column="0" Text="{x:Static p:Resources.TextBlock_Total}" HorizontalAlignment="Right" FontWeight="Bold" Margin="5" />
-                <TextBlock Grid.Column="1" Text="{Binding Total, StringFormat=C}" HorizontalAlignment="Right" Margin="5" FontWeight="Bold" />
+                <TextBlock Grid.Column="0" Text="{x:Static p:Resources.TextBlock_Total}"
+                           HorizontalAlignment="Right" FontWeight="Bold" Margin="5" />
+                <TextBlock Grid.Column="1" Text="{Binding Total, StringFormat=C}"
+                           HorizontalAlignment="Right" Margin="5" FontWeight="Bold" />
             </Grid>
         </Border>
 
-        <Button Grid.Row="3" Content="{x:Static p:Resources.Button_GenerarPDF}" Margin="10" Command="{Binding GenerarPdfCommand}" HorizontalAlignment="Right" Width="120" />
+        <Button Grid.Row="3" Content="{x:Static p:Resources.Button_GenerarPDF}"
+                Margin="10" Command="{Binding GenerarPdfCommand}"
+                HorizontalAlignment="Right" Width="120"
+                Padding="8,5" BorderThickness="1" BorderBrush="#AAAAAA"/>
     </Grid>
 </UserControl>

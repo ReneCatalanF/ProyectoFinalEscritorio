@@ -6,28 +6,46 @@
              xmlns:local="clr-namespace:Restaurant_SAP.Views"
              xmlns:p="clr-namespace:Restaurant_SAP.Properties"
              mc:Ignorable="d"
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+             d:DesignHeight="450" d:DesignWidth="800"
+             FontFamily="Segoe UI"
+             FontSize="14">
+    <Grid Margin="15">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <ListBox Grid.Row="0" ItemsSource="{Binding Menus}" SelectedItem="{Binding SelectedMenu}" Margin="10">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding Nombre}" FontWeight="Bold" Margin="0,0,5,0" ToolTip="{x:Static p:Resources.ListBox_Menus_Nombre}"/>
-                        <TextBlock Text="{Binding Descripcion}" Margin="0,0,5,0" ToolTip="{x:Static p:Resources.ListBox_Menus_Descripcion}"/>
-                        <TextBlock Text="{Binding Precio}" ToolTip="{x:Static p:Resources.ListBox_Menus_Precio}"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+        <ListView Grid.Row="0" ItemsSource="{Binding Menus}" SelectedItem="{Binding SelectedMenu}" Margin="10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="{x:Static p:Resources.ListBox_Menus_Nombre}" DisplayMemberBinding="{Binding Nombre}" Width="Auto" />
+                    <GridViewColumn Header="{x:Static p:Resources.ListBox_Menus_Descripcion}" DisplayMemberBinding="{Binding Descripcion}" Width="Auto" />
+                    <GridViewColumn Header="{x:Static p:Resources.ListBox_Menus_Precio}" DisplayMemberBinding="{Binding Precio, StringFormat=C}" Width="Auto" />
+                </GridView>
+            </ListView.View>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Padding" Value="8,5"/>
+                    <Setter Property="Margin" Value="0,0,0,2"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Background" Value="White"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="#E0F2F7"/>
+                            <Setter Property="FontWeight" Value="SemiBold"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
 
-        <GroupBox Grid.Row="1" Header="{x:Static p:Resources.GroupBox_EdicionMenu}" Margin="10" DataContext="{Binding MenuEnEdicion}">
-            <Grid>
+        <GroupBox Grid.Row="1"
+                  Header="{x:Static p:Resources.GroupBox_EdicionMenu}"
+                  Margin="0,0,0,15"
+                  BorderThickness="1"
+                  BorderBrush="#AAAAAA">
+            <Grid Margin="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
@@ -39,25 +57,35 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_NombreMenu}" Margin="5"/>
-                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Nombre, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_NombreMenu}" Margin="5" VerticalAlignment="Center"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding MenuEnEdicion.Nombre, UpdateSourceTrigger=PropertyChanged}" Margin="5" Padding="5"/>
 
-                <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_DescripcionMenu}" Margin="5"/>
-                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Descripcion, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_DescripcionMenu}" Margin="5" VerticalAlignment="Center"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding MenuEnEdicion.Descripcion, UpdateSourceTrigger=PropertyChanged}" Margin="5" Padding="5"/>
 
-                <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_PrecioMenu}" Margin="5"/>
-                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Precio, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_PrecioMenu}" Margin="5" VerticalAlignment="Center"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding MenuEnEdicion.Precio, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" Margin="5" Padding="5"/>
 
-                <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
-                    <Button Content="{x:Static p:Resources.Button_GuardarMenu}" Command="{Binding DataContext.GuardarCambiosCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5" />
-                    <Button Content="{x:Static p:Resources.Button_CancelarMenu}" Command="{Binding DataContext.CancelarEdicionCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5"/>
-                    <Button Content="{x:Static p:Resources.Button_EliminarMenu}" Command="{Binding DataContext.EliminarMenuCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5"/>
+                <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5,10,0,0">
+                    <Button Content="{x:Static p:Resources.Button_GuardarMenu}"
+                            Command="{Binding DataContext.GuardarCambiosCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                            Margin="0,0,5,0" Padding="8,5"/>
+                    <Button Content="{x:Static p:Resources.Button_CancelarMenu}"
+                            Command="{Binding DataContext.CancelarEdicionCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                            Margin="0,0,5,0" Padding="8,5"/>
+                    <Button Content="{x:Static p:Resources.Button_EliminarMenu}"
+                            Command="{Binding DataContext.EliminarMenuCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                            Padding="8,5"/>
                 </StackPanel>
             </Grid>
         </GroupBox>
 
-        <GroupBox Grid.Row="2" Header="{x:Static p:Resources.GroupBox_NuevoMenu}" Margin="10" DataContext="{Binding NuevoMenu}">
-            <Grid>
+        <GroupBox Grid.Row="2"
+                  Header="{x:Static p:Resources.GroupBox_NuevoMenu}"
+                  Margin="0"
+                  BorderThickness="1"
+                  BorderBrush="#AAAAAA">
+            <Grid Margin="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
@@ -69,17 +97,20 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_NombreMenu}" Margin="5"/>
-                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Nombre, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_NombreMenu}" Margin="5" VerticalAlignment="Center"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding NuevoMenu.Nombre, UpdateSourceTrigger=PropertyChanged}" Margin="5" Padding="5"/>
 
-                <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_DescripcionMenu}" Margin="5"/>
-                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Descripcion, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_DescripcionMenu}" Margin="5" VerticalAlignment="Center"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding NuevoMenu.Descripcion, UpdateSourceTrigger=PropertyChanged}" Margin="5" Padding="5"/>
 
-                <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_PrecioMenu}" Margin="5"/>
-                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Precio, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Static p:Resources.TextBlock_PrecioMenu}" Margin="5" VerticalAlignment="Center"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding NuevoMenu.Precio, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" Margin="5" Padding="5"/>
 
-                <Button Grid.Row="3" Grid.ColumnSpan="2" Content="{x:Static p:Resources.Button_AgregarNuevoMenu}"
-                        Command="{Binding DataContext.AgregarMenuCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Margin="5"/>
+                <Button Grid.Row="3" Grid.ColumnSpan="2"
+                        Content="{x:Static p:Resources.Button_AgregarNuevoMenu}"
+                        Command="{Binding DataContext.AgregarMenuCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                        Margin="5,10,5,5" Padding="8,5"
+                        HorizontalAlignment="Right" Width="120"/>
             </Grid>
         </GroupBox>
     </Grid>
