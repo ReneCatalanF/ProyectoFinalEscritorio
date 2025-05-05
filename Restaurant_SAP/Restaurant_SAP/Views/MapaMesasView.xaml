@@ -67,11 +67,16 @@
                                     </Style>
                                 </Border.Style>
                                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <StackPanel.InputBindings>
+                                        <MouseBinding Gesture="LeftClick"
+                      Command="{Binding DataContext.SeleccionarMesaCommand, RelativeSource={RelativeSource AncestorType=UserControl, Mode=FindAncestor}}"
+                      CommandParameter="{Binding}" />
+                                    </StackPanel.InputBindings>
                                     <Image Source="/Restaurant_SAP;component/Images/dinner-table.png"
-       Width="135"
-       Height="40"
-       HorizontalAlignment="Center"
-       VerticalAlignment="Center" />
+           Width="135"
+           Height="40"
+           HorizontalAlignment="Center"
+           VerticalAlignment="Center" />
                                     <TextBlock Text="{Binding Numero}" HorizontalAlignment="Center" FontWeight="Bold" />
                                 </StackPanel>
                             </Border>

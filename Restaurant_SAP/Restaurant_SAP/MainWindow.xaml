@@ -24,7 +24,7 @@
                     x:Name="btnConfiguracion"/>
         </StackPanel>
 
-        <TabControl Grid.Row="1">
+        <TabControl Grid.Row="1" x:Name="tabControl">
             <TabItem Header="{x:Static p:Resources.TabHeader_MapaMesas}">
                 <views:MapaMesasView DataContext="{Binding MapaMesasViewModel}"/>
             </TabItem>

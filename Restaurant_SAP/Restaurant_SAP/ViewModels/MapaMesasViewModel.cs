@@ -9,6 +9,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NLog;
+using System.Windows;
+using System.Windows.Input;
+using CommunityToolkit.Mvvm.Input;
+
 
 namespace Restaurant_SAP.ViewModels
 {
@@ -62,6 +66,38 @@ namespace Restaurant_SAP.ViewModels
                 OnPropertyChanged(nameof(Mesas));
                 OnPropertyChanged(nameof(CantidadMesas));
                 _logger.Debug("La propiedad Mesas ha cambiado en MesasViewModel. Notificando cambios.");
+            }
+        }
+
+        private RelayCommand<Mesa> _seleccionarMesaCommand;
+        public ICommand SeleccionarMesaCommand => _seleccionarMesaCommand ??= new RelayCommand<Mesa>(SeleccionarMesa);
+
+        private void SeleccionarMesa(Mesa mesaSeleccionada)
+        {
+            Console.WriteLine("ENTRO CON LA MESA SELECCIONADA");
+            _logger.Info($"Mesa seleccionada desde el mapa: {mesaSeleccionada?.Numero} (ID: {mesaSeleccionada?.Id}).");
+
+            // Acceder al ViewModelLocator a través del DataContext del MainWindow
+            if (Application.Current.MainWindow?.DataContext is ViewModelLocator locator)
+            {
+                // Establecer la mesa seleccionada en el MesaPedidoViewModel
+                locator.MesaPedidoViewModel.SelectedMesa = mesaSeleccionada;
+                _logger.Debug($"Mesa ID: {mesaSeleccionada?.Id} pasada al MesaPedidoViewModel.");
+
+                // Cambiar la pestaña seleccionada a la de Pedidos (índice 1)
+                if (Application.Current.MainWindow is MainWindow mainWindow)
+                {
+                    mainWindow.tabControl.SelectedIndex = 1;
+                    _logger.Info("Cambiando a la pestaña de Pedidos.");
+                }
+                else
+                {
+                    _logger.Warn("No se pudo acceder a la ventana principal para cambiar la pestaña.");
+                }
+            }
+            else
+            {
+                _logger.Error("No se pudo acceder al ViewModelLocator desde el DataContext del MainWindow.");
             }
         }
 
